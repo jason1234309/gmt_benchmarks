@@ -1,5 +1,7 @@
 # Benchmarks
 
+### Descriptions
+
 | Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
 | ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
 | open8 | CPU        | Low-level      | Verilog     | 1, 6 | https://opencores.org/projects/open8_urisc |
@@ -28,6 +30,7 @@
 | DES    |           |                |             | 8 | |
 
 
+
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
 [2] [Reverse-Engineering-for-High-Level-Functionality-Reconstruction](../wiki/Reverse-Engineering-Digital-Circuits-Using-Functional-Analysis.md)
@@ -47,3 +50,33 @@
 [9] [Recent Directories in Netlist Partitioning: A Survey](../wiki/Recent-Directions-in-Netlist-Partitioning:-A-survey-(1995).md)
 
 [10] [Graph Similarity and Its Applications to Hardware Security]
+
+### Design Utilizations
+
+| Name          | Total LUTs | LUTRAMs | Flip-Flops | BRAM Tiles | DSPs | IOBs |
+| ------------- | ---------- | ------- | ---------- |  ---- | ---- | ------- |
+| open8         | 
+| 8080          | 
+| MIPS 16       |
+| oc8051        |
+| AES           | 2560 | 0 | 3968 | 86 | 0 | 385 |
+| b15           |
+| s38584_scan   |
+| MC8051        |
+| rs232         |
+| openMSP430    |
+| basicRSA      | 580 | 0 | 459 | 0 | 0 | 132 |
+| ae18          | 926 | 16 | 446 | 0 | 0 | 96 |
+| Ethernet Mac  | 1923 | 0 | 2343 | 2 | 0 | 211 |
+
+What's missing?
+
+* b15 needs more library definitions
+* cpu8080 needs copy of original design
+* look into mc8051 - run the compile manually
+* mips - only 1 lut lol?
+* oc8051 - got wrong rom file maybe?
+* open8 - missing module defs
+* openmsp430 - not sure what's going on here...
+* rs232 - references a file with wrong relative path
+* s38584 - missing modules
