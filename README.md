@@ -4,7 +4,7 @@
 
 | Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
 | ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
-| open8 | CPU        | Low-level      | Verilog     | 1, 6 | https://opencores.org/projects/open8_urisc |
+| open8 | CPU        | Behavioral     | VHDL        | 1, 6 | https://opencores.org/projects/open8_urisc |
 | 8080 CPU | CPU     | Low-level      | VHDL        | 1, 6 | https://opencores.org/projects/cpu8080 |
 | MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | 1, 6 | https://opencores.org/projects/mips_16 |
 | oc8051 | 8051 core | Behavioral     | Verilog     | 1, 6 | https://opencores.org/projects/8051 |
@@ -55,28 +55,25 @@
 
 | Name          | Total LUTs | LUTRAMs | Flip-Flops | BRAM Tiles | DSPs | IOBs |
 | ------------- | ---------- | ------- | ---------- |  ---- | ---- | ------- |
-| open8         | 
-| 8080          | 
+| open8         | 763 | 0 | 209 | 0 | 0 | 44 | 
+| 8080          | 1013 | 0 | 342 | 0 | 0 | 33 |
 | MIPS 16       |
 | oc8051        |
 | AES           | 2560 | 0 | 3968 | 86 | 0 | 385 |
-| b15           |
+| b15           | 1803 | 0 | 418 | 0 | 0 | 149 |
 | s38584_scan   |
 | MC8051        |
 | rs232         |
-| openMSP430    |
+| openMSP430    | 1834 | 0 | 736 | 0 | 1 | 244 |
 | basicRSA      | 580 | 0 | 459 | 0 | 0 | 132 |
 | ae18          | 926 | 16 | 446 | 0 | 0 | 96 |
 | Ethernet Mac  | 1923 | 0 | 2343 | 2 | 0 | 211 |
 
 What's missing?
 
-* b15 needs more library definitions
-* cpu8080 needs copy of original design
-* look into mc8051 - run the compile manually
-* mips - only 1 lut lol?
+* mips - Ports are minimal and so Vivado totally optimizes away the design.
 * oc8051 - got wrong rom file maybe?
 * open8 - missing module defs
 * openmsp430 - not sure what's going on here...
 * rs232 - references a file with wrong relative path
-* s38584 - missing modules
+* s38584 - Too many ports for a device supported by Prjxray
