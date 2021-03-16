@@ -2,13 +2,15 @@
 
 ### Descriptions
 
+**Benchmarks in Papers**
+
 | Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
 | ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
 | open8 | CPU        | Behavioral     | VHDL        | 1, 6 | https://opencores.org/projects/open8_urisc |
 | 8080 CPU | CPU     | Low-level      | VHDL        | 1, 6 | https://opencores.org/projects/cpu8080 |
-| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | 1, 6 | https://opencores.org/projects/mips_16 |
+| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
 | oc8051 | 8051 core | Behavioral     | Verilog     | 1, 6 | https://opencores.org/projects/8051 |
-| AES | AES Cryptography | Behavioral | Verilog     | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan
+| AES | AES Cryptography | Behavioral | Verilog     | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
 | b15 |              | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | s38584_scan |      | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
@@ -17,19 +19,24 @@
 | basicRSA | RSA Public Key Cypher | Behavioral | VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | 6 | https://opencores.org/projects/ae18 |
 | Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | 8 | https://opencores.org/projects/ethmac |
+| DES | DES Cryptography | Behavioral  | Verilog    | 8 | https://iwls.org/iwls2005/benchmarks.html |
+| FPU | Floating Point Unit | Behavioral | Verilog  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
 
 **Unlocated Benchmarks**
 
 | Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
 | ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
 | Router |           |                |             | 1, 6 | |
-| RISC FPU | Fisc Floating Point Unit | |           | 1, 6 | |
 | SPARC  |           |                |             | 2 | |
 | eVoter | vot. mac. controller |     |             | 6 | |
 | UART   | UART transmitter |         |             | 8 | |
-| DES    |           |                |             | 8 | |
 
+**Other Benchmarks**
 
+| Name | Description | Type of Design | Language | Source |
+| ---- | ----------- | -------------- | -------- | ------ |
+| s1423 | Unknown    | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
+| s15850 | Unknown   | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
@@ -53,27 +60,64 @@
 
 ### Design Utilizations
 
-| Name          | Total LUTs | LUTRAMs | Flip-Flops | BRAM Tiles | DSPs | IOBs |
-| ------------- | ---------- | ------- | ---------- |  ---- | ---- | ------- |
-| open8         | 763 | 0 | 209 | 0 | 0 | 44 | 
-| 8080          | 1013 | 0 | 342 | 0 | 0 | 33 |
-| MIPS 16       |
+**Benchmarks in Papers**
+
+| Name          | Total LUTs    | LUTRAMs   | Flip-Flops | BRAM Tiles   | DSPs  | IOBs |
+| ------------- | ----------    | -------   | ---------- |  ---------   | ----  | ---- |
+| open8         | 763           | 0         | 209        | 0            | 0     | 44 | 
+| 8080          | 1013          | 0         | 342        | 0            | 0     | 33 |
+| MIPS 16 (opencore) |
+| MIPS 16 (HAL) |
 | oc8051        |
-| AES           | 2560 | 0 | 3968 | 86 | 0 | 385 |
-| b15           | 1803 | 0 | 418 | 0 | 0 | 149 |
-| s38584_scan   |
+| AES (opencore) | 2560         | 0         | 3968       | 86           | 0     | 385 |
+| AES (IWLS)    | 493           | 0         | 402        | 5            | 0     | 388 |
+| b15           | 1803          | 0         | 418        | 0            | 0     | 149 |
+| s38584_scan   | 
 | MC8051        |
 | rs232         |
-| openMSP430    | 1834 | 0 | 736 | 0 | 1 | 244 |
-| basicRSA      | 580 | 0 | 459 | 0 | 0 | 132 |
-| ae18          | 926 | 16 | 446 | 0 | 0 | 96 |
-| Ethernet Mac  | 1923 | 0 | 2343 | 2 | 0 | 211 |
+| openMSP430    | 1834          | 0         | 736        | 0            | 1     | 244   |
+| basicRSA      | 580           | 0         | 459        | 0            | 0     | 132   |
+| ae18          | 926           | 16        | 446        | 0            | 0     | 96    |
+| Ethernet Mac  | 1923          | 0         | 2343       | 2            | 0     | 211   |
+| DES (Area optimized) | 623    | 0         | 64         | 0            | 0     | 304   |
+| DES (Performance optimized) | 5512 | 140  | 6008       | 0            | 0     | 298   | 
+| FPU           |
 
-What's missing?
+**Other Benchmarks**
 
-* mips - Ports are minimal and so Vivado totally optimizes away the design.
+| Name          | Total LUTs | LUTRAMs | Flip-Flops | BRAM Tiles | DSPs | IOBs |
+| ------------- | ---------- | ------- | ---------- |  --------- | ---- | ---- |
+| s1423         | 100 | 0 | 74 | 0 | 0 | 24 |
+| s15850        | 100 | 0 | 137 | 0 | 0 | 101 |
+
+Issues with files
+
+* mips(opensource) - Ports are minimal and so Vivado totally optimizes away the design.
+* mips(hal) - Vivado says the design was build for simulation and cannot be used for synthesis
+* s38584 - Too many ports for a device supported by Prjxray
+* rs232 - bitCell_cntrH in u_xmit.v is driven by multiple nets
+
 * oc8051 - got wrong rom file maybe?
 * open8 - missing module defs
 * openmsp430 - not sure what's going on here...
-* rs232 - references a file with wrong relative path
-* s38584 - Too many ports for a device supported by Prjxray
+
+# How to create new Benchmarks
+
+* Send through Vivado to create a bitstream:
+  * Use this tcl command to place input/output ports of the chip: 
+    * `place_ports [get_ports *]`
+  * Use this tcl command to get a utilization report of the placed and routed design
+    * `report_utilization -file ./utilization_report.txt`
+  * Write a DCP checkpoint and a bitstream
+* If cell libraries do not exist for the given Verilog file:
+  * Copy `GMT_LOCATION/gmt/fasm2bels/trusthub_testing/gmt_trusthub_library.v` to the RTL folder of the design
+  * If there still missing cells, look up the ASIC cell the Verilog is referencing and create a new Verilog model for it in the gmt_trusthub_library.v file.
+* Run script to run fasm2bels analysis:
+  * `source GMT_LOCATION/gmt/fasm2bels/trusthub_testing/fasm2bels_run_and_compare.py [bit file] [fasm2bels main directory path] [prjxray main directory path] [conda environment used with fasm2bels]`
+  * Be sure to use `source` because Conda environments cannot be turned on/off without sourcing the script.
+  * prjxray has recently been formatting their database in a way that messes with fasm2bels. It may be neccessary to copy the node_wires.json, tileconn.json, and tilegrid.json files from the general part folder (prjxray/database/artix7/xc7a200t) to the part specific folder (prjxray/database/artix7/xc7a200tffg1156-1).
+  * Script will create a build directory containing fasm2bels output files and a report directory containing logs of the different processes
+* Alternatively, fasm2bels maybe run on one's own.
+  * Use prjxray's bit2fasm.py to create a FASM file
+  * Use fasm2bels to read in the FASM file and create the output Verilog and XDC files
+
