@@ -1,5 +1,7 @@
 # Benchmarks
 
+This directory contains a series of RTL benchmarks, many of which have  been used in other trojan-detection papers.
+
 ### Descriptions
 
 **Benchmarks in Papers**
