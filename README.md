@@ -94,7 +94,35 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 | s1423         | 100 | 0 | 74 | 0 | 0 | 24 |
 | s15850        | 100 | 0 | 137 | 0 | 0 | 101 |
 
-Issues with files
+# Benchmark Statuses
+
+| Name                | Original bistream generated | Fasm2bels Status  | Output Fasm differences** |
+| -------------       | --------------------------- | ----------------  | ------------------------- |
+| open8               | Yes                         | Complete          | None
+| 8080                | Yes                         | Complete          | None
+| MIPS 16 (opencore)* |                             |                   | 
+| MIPS 16 (HAL)*      |                             |                   |
+| oc8051              | Yes                         | Complete          | Small differences in IOB including TBYTESRC |
+| AES (opencore)      | Yes                         | Complete          | RAMB18 settings |
+| AES (IWLS)          | Yes                         | Complete          | RAMB18 settings |
+| b15                 | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| s38584_scan*        |                             |                   | 
+| MC8051              |                             |                   | 
+| rs232*              |                             |                   |
+| openMSP430          | Yes                         | Complete          | DSP and some PIPs (associated with DSP tile?)
+| basicRSA            | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| ae18                | Yes                         | Placed/Routed     |
+| Ethernet Mac        | Yes                         | Complete          | <10 PIPs and <10 RAMB18 settings |
+| DES (Area optimized) | Yes                        | Placed/Routed     |
+| DES (Performance optimized) | Yes                 | Errors in Vivado  |
+| FPU                 | Yes                         | Complete          | DSP and >100 PIPs (associated with DSP tile?)
+| s1423               | Yes                         | Complete          | None
+| s15850              | Yes                         | Complete          | Small differences in IOB
+
+
+**After Fasm2bels is successfully run, a diff between the original bitstream's FASM file and the fasm2bels generated FASM file is helfpul in knowing what Fasm2bels did not do correctly. The descriptions are not meant to be exhaustive but rather to show a brief summary of any differences.
+
+*Issues with files:
 
 * mips(opensource) - Ports are minimal and so Vivado totally optimizes away the design.
 * mips(hal) - Vivado says the design was build for simulation and cannot be used for synthesis
