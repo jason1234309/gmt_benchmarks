@@ -133,6 +133,21 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 * open8 - missing module defs
 * openmsp430 - not sure what's going on here...
 
+# Benchmark Contents
+
+Creating a benchmark involves finding a design's RTL code, writing an original bitstream using Vivado, sending it through Fasm2bels, and then send the Fasm2bels output through Vivado again.  If we have been able to take a benchmark through the our full "benchmark creation process" then that benchmark will contain three folders: rtl, original_design, and fasm2bels_design.
+
+* rtl: Contains original Verilog or VHDL code for the design
+* original_design: Contains several files associated with the original design when loaded into Vivado
+  * `.dcp` - Vivado 2020.2 checkpoint of placed and routed design
+  * `_vivado_netlist.v` - Netlist created when write_verilog is run on the placed and routed design
+  * `.xpr` - Vivado 2020.2 project file for design
+  * `.bit` - original design's bitstream
+  * `utilization_report.txt` - Vivado's utilizatin report which includes information about chip resources used
+  * `.fasm` - Prjxray-generated FASM file of original bitstream
+* fas2bels_design: Contains files associated with the Fasm2bels run on the `.bit` file from the original_design directory. In general, any file in the fasm2bels_design folder that contains `_f2b` is a file that was generated from Fasm2bels or from Fasm2bels output files.
+  * 
+
 # How to create new Benchmarks
 
 * Send through Vivado to create a bitstream:
