@@ -39,6 +39,14 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 | ---- | ----------- | -------------- | -------- | ------ |
 | s1423 | Unknown    | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
 | s15850 | Unknown   | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
+| c2670 | 12-bit ALU and controller |  Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c3540 | 8-bit ALU | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c5315 | 9-bit ALU | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c6288 | 16-bit multiplier | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1423scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s13207scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s15850scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s35832scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
