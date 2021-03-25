@@ -6,23 +6,23 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 
 **Benchmarks in Papers**
 
-| Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
-| ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
-| open8 | CPU        | Behavioral     | VHDL        | 1, 6 | https://opencores.org/projects/open8_urisc |
-| 8080 CPU | CPU     | Low-level      | VHDL        | 1, 6 | https://opencores.org/projects/cpu8080 |
-| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
-| oc8051 | 8051 core | Behavioral     | Verilog     | 1, 6 | https://opencores.org/projects/8051 |
-| AES | AES Cryptography | Behavioral | Verilog     | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
-| b15 |              | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s38584_scan |      | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| rs232  | transeiver | Behavioral    | Verilog     | 2, 4 |https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| openMSP430 | microcontroller | Behavioral | Verilog | 3 | https://opencores.org/projects/openmsp430 |
-| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | 6 | https://opencores.org/projects/ae18 |
-| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | 8 | https://opencores.org/projects/ethmac |
-| DES | DES Cryptography | Behavioral  | Verilog    | 8 | https://iwls.org/iwls2005/benchmarks.html |
-| FPU | Floating Point Unit | Behavioral | Verilog  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
+| Name | Description | Type of Design | Language    | Trojan Versions Exist | Papers Which Reference Design | Source |
+| ---- | ----------- | -------------- | --------    | --------------------- | ----------------------------- | ------ |
+| open8 | CPU        | Behavioral     | VHDL        | No  | 1, 6 | https://opencores.org/projects/open8_urisc |
+| 8080 CPU | CPU     | Low-level      | VHDL        | No  | 1, 6 | https://opencores.org/projects/cpu8080 |
+| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | No | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
+| oc8051 | 8051 core | Behavioral     | Verilog     | No  | 1, 6 | https://opencores.org/projects/8051 |
+| AES | AES Cryptography | Behavioral | Verilog     | Yes | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
+| b15 |              | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s38584_scan |      | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| rs232  | transeiver | Behavioral    | Verilog     | Yes | 2, 4 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| openMSP430 | microcontroller | Behavioral | Verilog | No  | 3 | https://opencores.org/projects/openmsp430 |
+| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | Yes | 6 | https://opencores.org/projects/ae18 |
+| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | No | 8 | https://opencores.org/projects/ethmac |
+| DES | DES Cryptography | Behavioral  | Verilog    | No  | 8 | https://iwls.org/iwls2005/benchmarks.html |
+| FPU | Floating Point Unit | Behavioral | Verilog  | No  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
 
 **Unlocated Benchmarks**
 
@@ -35,18 +35,18 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 
 **Other Benchmarks**
 
-| Name | Description | Type of Design | Language | Source |
-| ---- | ----------- | -------------- | -------- | ------ |
-| s1423 | Unknown    | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
-| s15850 | Unknown   | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
-| c2670 | 12-bit ALU and controller |  Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c3540 | 8-bit ALU | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c5315 | 9-bit ALU | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c6288 | 16-bit multiplier | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1423scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s13207scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s15850scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s35832scan | Unknown, contains scan chain | Low-level | Verilog | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| Name | Description | Type of Design | Language | Trojan Versions Exist | Source |
+| ---- | ----------- | -------------- | -------- | --------------------- | ------ |
+| s1423 | Unknown    | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
+| s15850 | Unknown   | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
+| c2670 | 12-bit ALU and controller |  Low-level | Verilog | Yes         | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c3540 | 8-bit ALU  | Low-level      | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c5315 | 9-bit ALU  | Low-level      | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c6288 | 16-bit multiplier | Low-level | Verilog | Yes                  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1423scan | Unknown, contains scan chain | Low-level | Verilog | Yes   | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s13207scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s15850scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s35832scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
@@ -97,10 +97,18 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 
 **Other Benchmarks**
 
-| Name          | Total LUTs | LUTRAMs | Flip-Flops | BRAM Tiles | DSPs | IOBs |
-| ------------- | ---------- | ------- | ---------- |  --------- | ---- | ---- |
-| s1423         | 100 | 0 | 74 | 0 | 0 | 24 |
-| s15850        | 100 | 0 | 137 | 0 | 0 | 101 |
+| Name          | Total LUTs  | LUTRAMs | Flip-Flops  | BRAM Tiles  | DSPs  | IOBs  |
+| ------------- | ----------  | ------- | ----------  |  ---------  | ----  | ----  |
+| s1423         | 100         | 0       | 74          | 0           | 0     | 24    |
+| s15850        | 100         | 0       | 137         | 0           | 0     | 101   |
+| c2670         | 84          | 0       | 0           | 0           | 0     | 364   |
+| c3540         | 161         | 0       | 0           | 0           | 0     | 70    |
+| c5315         | 164         | 0       | 0           | 0           | 0     | 288   |
+| c6288         | 545         | 0       | 0           | 0           | 0     | 64    |
+| s1423scan     | 140         | 0       | 74          | 0           | 0     | 26    |
+| s13207scan    | 731         | 0       | 625         | 0           | 0     | 217   |
+| s15850scan    | 838         | 0       | 513         | 0           | 0     | 230   |
+| s35832scan    | 1662        | 0       | 1728        | 0           | 0     | 359   |
 
 # Benchmark Statuses
 
@@ -154,7 +162,12 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
   * `utilization_report.txt` - Vivado's utilizatin report which includes information about chip resources used
   * `.fasm` - Prjxray-generated FASM file of original bitstream
 * fas2bels_design: Contains files associated with the Fasm2bels run on the `.bit` file from the original_design directory. In general, any file in the fasm2bels_design folder that contains `_f2b` is a file that was generated from Fasm2bels or from Fasm2bels output files.
-  * 
+  * `.bit` - original design's bitstream. Has been included in this folder becauser it is the starting point for the whole Fasm2bels process.
+  * `_f2b.v` - Fasm2bels output. Verilog bel-level netlist representation of design.
+  * `_f2b.xdc` - Fasm2bels output. Represents the placement and routing of a design.
+  * `_f2b_edited.xdc` - The normal xdc file outputted by Fasm2bels occasionally has a few errors that won't allow the Fasm2bels `_f2b.xdc` file to be run in Vivado. This primarily involves the XDC file referencing cells that Vivado did not create (reason currently unknown). The edited version includes guards for if these cells don't exist, making it so Vivado will ignore them instead of stopping the run.
+  * `_f2b.dcp` - DCP checkpoint of the Fasm2bels placed and routed design. Uses Vivado 2017.2 since Fasm2bels requires this version.
+  * `_f2b.fasm` - FASM file representation of the bitstream generated from the Fasm2bels output. This can be helpful to have when comparing this FASM file with the original FASM file in order to get a hint of any differences between the two.
 
 # How to create new Benchmarks
 
