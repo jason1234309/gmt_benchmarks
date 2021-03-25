@@ -6,23 +6,23 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 
 **Benchmarks in Papers**
 
-| Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
-| ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
-| open8 | CPU        | Behavioral     | VHDL        | 1, 6 | https://opencores.org/projects/open8_urisc |
-| 8080 CPU | CPU     | Low-level      | VHDL        | 1, 6 | https://opencores.org/projects/cpu8080 |
-| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
-| oc8051 | 8051 core | Behavioral     | Verilog     | 1, 6 | https://opencores.org/projects/8051 |
-| AES | AES Cryptography | Behavioral | Verilog     | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
-| b15 |              | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s38584_scan |      | Low-level      | Verilog     | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| rs232  | transeiver | Behavioral    | Verilog     | 2, 4 |https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| openMSP430 | microcontroller | Behavioral | Verilog | 3 | https://opencores.org/projects/openmsp430 |
-| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | 6 | https://opencores.org/projects/ae18 |
-| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | 8 | https://opencores.org/projects/ethmac |
-| DES | DES Cryptography | Behavioral  | Verilog    | 8 | https://iwls.org/iwls2005/benchmarks.html |
-| FPU | Floating Point Unit | Behavioral | Verilog  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
+| Name | Description | Type of Design | Language    | Trojan Versions Exist | Papers Which Reference Design | Source |
+| ---- | ----------- | -------------- | --------    | --------------------- | ----------------------------- | ------ |
+| open8 | CPU        | Behavioral     | VHDL        | No  | 1, 6 | https://opencores.org/projects/open8_urisc |
+| 8080 CPU | CPU     | Low-level      | VHDL        | No  | 1, 6 | https://opencores.org/projects/cpu8080 |
+| MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | No | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
+| oc8051 | 8051 core | Behavioral     | Verilog     | No  | 1, 6 | https://opencores.org/projects/8051 |
+| AES | AES Cryptography | Behavioral | Verilog     | Yes | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
+| b15 |              | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s38584_scan |      | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| rs232  | transeiver | Behavioral    | Verilog     | Yes | 2, 4 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| openMSP430 | microcontroller | Behavioral | Verilog | No  | 3 | https://opencores.org/projects/openmsp430 |
+| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | Yes | 6 | https://opencores.org/projects/ae18 |
+| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | No | 8 | https://opencores.org/projects/ethmac |
+| DES | DES Cryptography | Behavioral  | Verilog    | No  | 8 | https://iwls.org/iwls2005/benchmarks.html |
+| FPU | Floating Point Unit | Behavioral | Verilog  | No  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
 
 **Unlocated Benchmarks**
 
@@ -35,10 +35,10 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 
 **Other Benchmarks**
 
-| Name | Description | Type of Design | Language | Source |
-| ---- | ----------- | -------------- | -------- | ------ |
-| s1423 | Unknown    | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
-| s15850 | Unknown   | Low-level      | Verilog  | https://iwls.org/iwls2005/benchmarks.html |
+| Name | Description | Type of Design | Language | Trojan Versions Exist | Source |
+| ---- | ----------- | -------------- | -------- | --------------------- | ------ |
+| s1423 | Unknown    | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
+| s15850 | Unknown   | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
@@ -128,10 +128,6 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 * mips(hal) - Vivado says the design was build for simulation and cannot be used for synthesis
 * s38584 - Too many ports for a device supported by Prjxray
 * rs232 - bitCell_cntrH in u_xmit.v is driven by multiple nets
-
-* oc8051 - got wrong rom file maybe?
-* open8 - missing module defs
-* openmsp430 - not sure what's going on here...
 
 # How to create new Benchmarks
 
