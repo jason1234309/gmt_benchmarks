@@ -129,6 +129,30 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 * s38584 - Too many ports for a device supported by Prjxray
 * rs232 - bitCell_cntrH in u_xmit.v is driven by multiple nets
 
+* oc8051 - got wrong rom file maybe?
+* open8 - missing module defs
+* openmsp430 - not sure what's going on here...
+
+# Benchmark Contents
+
+Creating a benchmark involves finding a design's RTL code, writing an original bitstream using Vivado, sending it through Fasm2bels, and then send the Fasm2bels output through Vivado again.  If we have been able to take a benchmark through the our full "benchmark creation process" then that benchmark will contain three folders: rtl, original_design, and fasm2bels_design.
+
+* rtl: Contains original Verilog or VHDL code for the design
+* original_design: Contains several files associated with the original design when loaded into Vivado
+  * `.dcp` - Vivado 2020.2 checkpoint of placed and routed design
+  * `_vivado_netlist.v` - Netlist created when write_verilog is run on the placed and routed design
+  * `.xpr` - Vivado 2020.2 project file for design
+  * `.bit` - original design's bitstream
+  * `utilization_report.txt` - Vivado's utilizatin report which includes information about chip resources used
+  * `.fasm` - Prjxray-generated FASM file of original bitstream
+* fas2bels_design: Contains files associated with the Fasm2bels run on the `.bit` file from the original_design directory. In general, any file in the fasm2bels_design folder that contains `_f2b` is a file that was generated from Fasm2bels or from Fasm2bels output files.
+  * `.bit` - original design's bitstream. Has been included in this folder becauser it is the starting point for the whole Fasm2bels process.
+  * `_f2b.v` - Fasm2bels output. Verilog bel-level netlist representation of design.
+  * `_f2b.xdc` - Fasm2bels output. Represents the placement and routing of a design.
+  * `_f2b_edited.xdc` - The normal xdc file outputted by Fasm2bels occasionally has a few errors that won't allow the Fasm2bels `_f2b.xdc` file to be run in Vivado. This primarily involves the XDC file referencing cells that Vivado did not create (reason currently unknown). The edited version includes guards for if these cells don't exist, making it so Vivado will ignore them instead of stopping the run.
+  * `_f2b.dcp` - DCP checkpoint of the Fasm2bels placed and routed design. Uses Vivado 2017.2 since Fasm2bels requires this version.
+  * `_f2b.fasm` - FASM file representation of the bitstream generated from the Fasm2bels output. This can be helpful to have when comparing this FASM file with the original FASM file in order to get a hint of any differences between the two.
+
 # How to create new Benchmarks
 
 * Send through Vivado to create a bitstream:
