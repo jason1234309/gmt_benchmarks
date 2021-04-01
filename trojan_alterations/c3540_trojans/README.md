@@ -2,103 +2,103 @@
 
 | Trojan Name   | Creation Status | Fasm2bels Status |
 | -----------   | --------------- | ---------------- |
-| c3540_T000    |
-| c3540_T001    |
-| c3540_T002    |
-| c3540_T003    |
-| c3540_T004    |
-| c3540_T005    |
-| c3540_T006    |
-| c3540_T007    |
-| c3540_T008    |
-| c3540_T009    |
-| c3540_T010    |
-| c3540_T011    |
-| c3540_T012    |
-| c3540_T013    |
-| c3540_T014    |
-| c3540_T015    |
-| c3540_T016    |
-| c3540_T017    |
-| c3540_T018    |
-| c3540_T019    |
-| c3540_T020    |
-| c3540_T021    |
-| c3540_T022    |
-| c3540_T023    |
-| c3540_T024    |
-| c3540_T025    |
-| c3540_T026    |
-| c3540_T027    |
-| c3540_T028    |
-| c3540_T029    |
-| c3540_T030    |
-| c3540_T031    |
-| c3540_T032    |
-| c3540_T033    |
-| c3540_T034    |
-| c3540_T035    |
-| c3540_T036    |
-| c3540_T037    |
-| c3540_T038    |
-| c3540_T039    |
-| c3540_T040    |
-| c3540_T041    |
-| c3540_T042    |
-| c3540_T043    |
-| c3540_T044    |
-| c3540_T045    |
-| c3540_T046    |
-| c3540_T047    |
-| c3540_T048    |
-| c3540_T049    |
-| c3540_T050    |
-| c3540_T051    |
-| c3540_T052    |
-| c3540_T053    |
-| c3540_T054    |
-| c3540_T055    |
-| c3540_T056    |
-| c3540_T057    |
-| c3540_T058    |
-| c3540_T059    |
-| c3540_T060    |
-| c3540_T061    |
-| c3540_T062    |
-| c3540_T063    |
-| c3540_T064    |
-| c3540_T065    |
-| c3540_T066    |
-| c3540_T067    |
-| c3540_T068    |
-| c3540_T069    |
-| c3540_T070    |
-| c3540_T071    |
-| c3540_T072    |
-| c3540_T073    |
-| c3540_T074    |
-| c3540_T075    |
-| c3540_T076    |
-| c3540_T077    |
-| c3540_T078    |
-| c3540_T079    |
-| c3540_T080    |
-| c3540_T081    |
-| c3540_T082    |
-| c3540_T083    |
-| c3540_T084    |
-| c3540_T085    |
-| c3540_T086    |
-| c3540_T087    |
-| c3540_T088    |
-| c3540_T089    |
-| c3540_T090    |
-| c3540_T091    |
-| c3540_T092    |
-| c3540_T093    |
-| c3540_T094    |
-| c3540_T095    |
-| c3540_T096    |
-| c3540_T097    |
-| c3540_T098    |
-| c3540_T099    |
+| c3540_T000    | Complete        |
+| c3540_T001    | Complete        |
+| c3540_T002    | Complete        |
+| c3540_T003    | Complete        |
+| c3540_T004    | Complete        |
+| c3540_T005    | Complete        |
+| c3540_T006    | Complete        |
+| c3540_T007    | Complete        |
+| c3540_T008    | Complete        |
+| c3540_T009    | Complete        |
+| c3540_T010    | Complete        |
+| c3540_T011    | Complete        |
+| c3540_T012    | Complete        |
+| c3540_T013    | Complete        |
+| c3540_T014    | Complete        |
+| c3540_T015    | Complete        |
+| c3540_T016    | Complete        |
+| c3540_T017    | Complete        |
+| c3540_T018    | Complete        |
+| c3540_T019    | Complete        |
+| c3540_T020    | Complete        |
+| c3540_T021    | Complete        |
+| c3540_T022    | Complete        |
+| c3540_T023    | Complete        |
+| c3540_T024    | Complete        |
+| c3540_T025    | Complete        |
+| c3540_T026    | Complete        |
+| c3540_T027    | Complete        |
+| c3540_T028    | Complete        |
+| c3540_T029    | Complete        |
+| c3540_T030    | Complete        |
+| c3540_T031    | Complete        |
+| c3540_T032    | Complete        |
+| c3540_T033    | Complete        |
+| c3540_T034    | Complete        |
+| c3540_T035    | Complete        |
+| c3540_T036    | Complete        |
+| c3540_T037    | Complete        |
+| c3540_T038    | Complete        |
+| c3540_T039    | Complete        |
+| c3540_T040    | Complete        |
+| c3540_T041    | Complete        |
+| c3540_T042    | Complete        |
+| c3540_T043    | Complete        |
+| c3540_T044    | Complete        |
+| c3540_T045    | Complete        |
+| c3540_T046    | Complete        |
+| c3540_T047    | Complete        |
+| c3540_T048    | Complete        |
+| c3540_T049    | Complete        |
+| c3540_T050    | Complete        |
+| c3540_T051    | Complete        |
+| c3540_T052    | Complete        |
+| c3540_T053    | Complete        |
+| c3540_T054    | Complete        |
+| c3540_T055    | Complete        |
+| c3540_T056    | Complete        |
+| c3540_T057    | Complete        |
+| c3540_T058    | Complete        |
+| c3540_T059    | Complete        |
+| c3540_T060    | Complete        |
+| c3540_T061    | Complete        |
+| c3540_T062    | Complete        |
+| c3540_T063    | Complete        |
+| c3540_T064    | Complete        |
+| c3540_T065    | Complete        |
+| c3540_T066    | Complete        |
+| c3540_T067    | Complete        |
+| c3540_T068    | Complete        |
+| c3540_T069    | Complete        |
+| c3540_T070    | Complete        |
+| c3540_T071    | Complete        |
+| c3540_T072    | Complete        |
+| c3540_T073    | Complete        |
+| c3540_T074    | Complete        |
+| c3540_T075    | Complete        |
+| c3540_T076    | Complete        |
+| c3540_T077    | Complete        |
+| c3540_T078    | Complete        |
+| c3540_T079    | Complete        |
+| c3540_T080    | Complete        |
+| c3540_T081    | Complete        |
+| c3540_T082    | Complete        |
+| c3540_T083    | Complete        |
+| c3540_T084    | Complete        |
+| c3540_T085    | Complete        |
+| c3540_T086    | Complete        |
+| c3540_T087    | Complete        |
+| c3540_T088    | Complete        |
+| c3540_T089    | Complete        |
+| c3540_T090    | Complete        |
+| c3540_T091    | Complete        |
+| c3540_T092    | Complete        |
+| c3540_T093    | Complete        |
+| c3540_T094    | Complete        |
+| c3540_T095    | Complete        |
+| c3540_T096    | Complete        |
+| c3540_T097    | Complete        |
+| c3540_T098    | Complete        |
+| c3540_T099    | Complete        |

@@ -283,6 +283,10 @@ The following table reports the trojans that have been added to this repo and th
 | s13207scan         | 110                | 
 | s15850scan         | 110                |
 | s35932scan         | 63                 |
+| c2670              | 
+| c3540              | 
+| c5313              | 110
+| c6288              | 110
 
 # How to create new Benchmarks
 

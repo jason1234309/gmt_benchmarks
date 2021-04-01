@@ -1,113 +1,114 @@
 # Trojan Benchmark Report
 
 | Trojan Name   | Creation Status | Fasm2bels Status |
-| -----------   | --------------- | ---------------- |c6288_T000
-| c6288_T001    |
-| c6288_T002    |
-| c6288_T003    |
-| c6288_T004    |
-| c6288_T005    |
-| c6288_T006    |
-| c6288_T007    |
-| c6288_T008    |
-| c6288_T009    |
-| c6288_T010    |
-| c6288_T011    |
-| c6288_T012    |
-| c6288_T013    |
-| c6288_T014    |
-| c6288_T015    |
-| c6288_T016    |
-| c6288_T017    |
-| c6288_T018    |
-| c6288_T019    |
-| c6288_T020    |
-| c6288_T021    |
-| c6288_T022    |
-| c6288_T023    |
-| c6288_T024    |
-| c6288_T025    |
-| c6288_T026    |
-| c6288_T027    |
-| c6288_T028    |
-| c6288_T029    |
-| c6288_T030    |
-| c6288_T031    |
-| c6288_T032    |
-| c6288_T033    |
-| c6288_T034    |
-| c6288_T035    |
-| c6288_T036    |
-| c6288_T037    |
-| c6288_T038    |
-| c6288_T039    |
-| c6288_T040    |
-| c6288_T041    |
-| c6288_T042    |
-| c6288_T043    |
-| c6288_T044    |
-| c6288_T045    |
-| c6288_T046    |
-| c6288_T047    |
-| c6288_T048    |
-| c6288_T049    |
-| c6288_T050    |
-| c6288_T051    |
-| c6288_T052    |
-| c6288_T053    |
-| c6288_T054    |
-| c6288_T055    |
-| c6288_T056    |
-| c6288_T057    |
-| c6288_T058    |
-| c6288_T059    |
-| c6288_T060    |
-| c6288_T061    |
-| c6288_T062    |
-| c6288_T063    |
-| c6288_T064    |
-| c6288_T065    |
-| c6288_T066    |
-| c6288_T067    |
-| c6288_T068    |
-| c6288_T069    |
-| c6288_T070    |
-| c6288_T071    |
-| c6288_T072    |
-| c6288_T073    |
-| c6288_T074    |
-| c6288_T075    |
-| c6288_T076    |
-| c6288_T077    |
-| c6288_T078    |
-| c6288_T079    |
-| c6288_T080    |
-| c6288_T081    |
-| c6288_T082    |
-| c6288_T083    |
-| c6288_T084    |
-| c6288_T085    |
-| c6288_T086    |
-| c6288_T087    |
-| c6288_T088    |
-| c6288_T089    |
-| c6288_T090    |
-| c6288_T091    |
-| c6288_T092    |
-| c6288_T093    |
-| c6288_T094    |
-| c6288_T095    |
-| c6288_T096    |
-| c6288_T097    |
-| c6288_T098    |
-| c6288_T099    |
-| c6288_T200    |
-| c6288_T201    |
-| c6288_T202    |
-| c6288_T203    |
-| c6288_T204    |
-| c6288_T205    |
-| c6288_T206    |
-| c6288_T207    |
-| c6288_T208    |
-| c6288_T209    |
+| -----------   | --------------- | ---------------- |
+| c6288_T000    | Complete        |
+| c6288_T001    | Complete        |
+| c6288_T002    | Complete        |
+| c6288_T003    | Complete        |
+| c6288_T004    | Complete        |
+| c6288_T005    | Complete        |
+| c6288_T006    | Complete        |
+| c6288_T007    | Complete        |
+| c6288_T008    | Complete        |
+| c6288_T009    | Complete        |
+| c6288_T010    | Complete        |
+| c6288_T011    | Complete        |
+| c6288_T012    | Complete        |
+| c6288_T013    | Complete        |
+| c6288_T014    | Complete        |
+| c6288_T015    | Complete        |
+| c6288_T016    | Complete        |
+| c6288_T017    | Complete        |
+| c6288_T018    | Complete        |
+| c6288_T019    | Complete        |
+| c6288_T020    | Complete        |
+| c6288_T021    | Complete        |
+| c6288_T022    | Complete        |
+| c6288_T023    | Complete        |
+| c6288_T024    | Complete        |
+| c6288_T025    | Complete        |
+| c6288_T026    | Complete        |
+| c6288_T027    | Complete        |
+| c6288_T028    | Complete        |
+| c6288_T029    | Complete        |
+| c6288_T030    | Complete        |
+| c6288_T031    | Complete        |
+| c6288_T032    | Complete        |
+| c6288_T033    | Complete        |
+| c6288_T034    | Complete        |
+| c6288_T035    | Complete        |
+| c6288_T036    | Complete        |
+| c6288_T037    | Complete        |
+| c6288_T038    | Complete        |
+| c6288_T039    | Complete        |
+| c6288_T040    | Complete        |
+| c6288_T041    | Complete        |
+| c6288_T042    | Complete        |
+| c6288_T043    | Complete        |
+| c6288_T044    | Complete        |
+| c6288_T045    | Complete        |
+| c6288_T046    | Complete        |
+| c6288_T047    | Complete        |
+| c6288_T048    | Complete        |
+| c6288_T049    | Complete        |
+| c6288_T050    | Complete        |
+| c6288_T051    | Complete        |
+| c6288_T052    | Complete        |
+| c6288_T053    | Complete        |
+| c6288_T054    | Complete        |
+| c6288_T055    | Complete        |
+| c6288_T056    | Complete        |
+| c6288_T057    | Complete        |
+| c6288_T058    | Complete        |
+| c6288_T059    | Complete        |
+| c6288_T060    | Complete        |
+| c6288_T061    | Complete        |
+| c6288_T062    | Complete        |
+| c6288_T063    | Complete        |
+| c6288_T064    | Complete        |
+| c6288_T065    | Complete        |
+| c6288_T066    | Complete        |
+| c6288_T067    | Complete        |
+| c6288_T068    | Complete        |
+| c6288_T069    | Complete        |
+| c6288_T070    | Complete        |
+| c6288_T071    | Complete        |
+| c6288_T072    | Complete        |
+| c6288_T073    | Complete        |
+| c6288_T074    | Complete        |
+| c6288_T075    | Complete        |
+| c6288_T076    | Complete        |
+| c6288_T077    | Complete        |
+| c6288_T078    | Complete        |
+| c6288_T079    | Complete        |
+| c6288_T080    | Complete        |
+| c6288_T081    | Complete        |
+| c6288_T082    | Complete        |
+| c6288_T083    | Complete        |
+| c6288_T084    | Complete        |
+| c6288_T085    | Complete        |
+| c6288_T086    | Complete        |
+| c6288_T087    | Complete        |
+| c6288_T088    | Complete        |
+| c6288_T089    | Complete        |
+| c6288_T090    | Complete        |
+| c6288_T091    | Complete        |
+| c6288_T092    | Complete        |
+| c6288_T093    | Complete        |
+| c6288_T094    | Complete        |
+| c6288_T095    | Complete        |
+| c6288_T096    | Complete        |
+| c6288_T097    | Complete        |
+| c6288_T098    | Complete        |
+| c6288_T099    | Complete        |
+| c6288_T200    | Complete        |
+| c6288_T201    | Complete        |
+| c6288_T202    | Complete        |
+| c6288_T203    | Complete        |
+| c6288_T204    | Complete        |
+| c6288_T205    | Complete        |
+| c6288_T206    | Complete        |
+| c6288_T207    | Complete        |
+| c6288_T208    | Complete        |
+| c6288_T209    | Complete        |

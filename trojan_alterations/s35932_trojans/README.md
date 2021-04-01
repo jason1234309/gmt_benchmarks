@@ -41,73 +41,73 @@
 | s35932_T434 | Complete        |                 |
 | s35932_T435 | Complete        |                 |
 | s35932_T436 | Complete        |                 |
-| s35932_T437 |                 |                 |
-| s35932_T438 |                 |                 |
-| s35932_T439 |                 |                 |
-| s35932_T440 |                 |                 |
-| s35932_T441 |                 |                 |
-| s35932_T442 |                 |                 |
-| s35932_T600 |                 |                 |
-| s35932_T601 |                 |                 |
-| s35932_T602 |                 |                 |
-| s35932_T603 |                 |                 |
-| s35932_T604 |                 |                 |
-| s35932_T605 |                 |                 |
-| s35932_T606 |                 |                 |
-| s35932_T607 |                 |                 |
-| s35932_T608 |                 |                 |
-| s35932_T609 |                 |                 |
-| s35932_T610 |                 |                 |
-| s35932_T611 |                 |                 |
-| s35932_T612 |                 |                 |
-| s35932_T613 |                 |                 |
-| s35932_T614 |                 |                 |
-| s35932_T615 |                 |                 |
-| s35932_T616 |                 |                 |
-| s35932_T617 |                 |                 |
-| s35932_T618 |                 |                 |
-| s35932_T619 |                 |                 |
+| s35932_T437 | Complete        |                 |
+| s35932_T438 | Complete        |                 |
+| s35932_T439 | Complete        |                 |
+| s35932_T440 | Complete        |                 |
+| s35932_T441 | Complete        |                 |
+| s35932_T442 | Complete        |                 |
+| s35932_T600 | Complete        |                 |
+| s35932_T601 | Complete        |                 |
+| s35932_T602 | Complete        |                 |
+| s35932_T603 | Complete        |                 |
+| s35932_T604 | Complete        |                 |
+| s35932_T605 | Complete        |                 |
+| s35932_T606 | Complete        |                 |
+| s35932_T607 | Complete        |                 |
+| s35932_T608 | Complete        |                 |
+| s35932_T609 | Complete        |                 |
+| s35932_T610 | Complete        |                 |
+| s35932_T611 | Complete        |                 |
+| s35932_T612 | Complete        |                 |
+| s35932_T613 | Complete        |                 |
+| s35932_T614 | Complete        |                 |
+| s35932_T615 | Complete        |                 |
+| s35932_T616 | Complete        |                 |
+| s35932_T617 | Complete        |                 |
+| s35932_T618 | Complete        |                 |
+| s35932_T619 | Complete        |                 |
 
 ### TRIT-TC Trojans
 
 | Trojan Name   | Creation Status | Fasm2bels Status |
 | -----------   | --------------- | ---------------- |
-| s35932_T000   |
-| s35932_T001   |
-| s35932_T002   |
-| s35932_T003   |
-| s35932_T004   |
-| s35932_T005   |
-| s35932_T006   |
-| s35932_T007   |
-| s35932_T008   |
-| s35932_T009   |
-| s35932_T010   |
-| s35932_T011   |
-| s35932_T012   |
-| s35932_T013   |
-| s35932_T014   |
-| s35932_T015   |
-| s35932_T016   |
-| s35932_T017   |
-| s35932_T018   |
-| s35932_T019   |
-| s35932_T200   |
-| s35932_T201   |
-| s35932_T202   |
-| s35932_T203   |
-| s35932_T204   |
-| s35932_T205   |
-| s35932_T206   |
-| s35932_T207   |
-| s35932_T208   |
-| s35932_T209   |
-| s35932_T210   |
-| s35932_T211   |
-| s35932_T212   |
-| s35932_T213   |
-| s35932_T214   |
-| s35932_T215   |
-| s35932_T216   |
-| s35932_T217   |
-| s35932_T218   |
+| s35932_T000   | Complete        |
+| s35932_T001   | Complete        |
+| s35932_T002   | Complete        |
+| s35932_T003   | Complete        |
+| s35932_T004   | Complete        |
+| s35932_T005   | Complete        |
+| s35932_T006   | Complete        |
+| s35932_T007   | Complete        |
+| s35932_T008   | Complete        |
+| s35932_T009   | Complete        |
+| s35932_T010   | Complete        |
+| s35932_T011   | Complete        |
+| s35932_T012   | Complete        |
+| s35932_T013   | Complete        |
+| s35932_T014   | Complete        |
+| s35932_T015   | Complete        |
+| s35932_T016   | Complete        |
+| s35932_T017   | Complete        |
+| s35932_T018   | Complete        |
+| s35932_T019   | Complete        |
+| s35932_T200   | Complete        |
+| s35932_T201   | Complete        |
+| s35932_T202   | Complete        |
+| s35932_T203   | Complete        |
+| s35932_T204   | Complete        |
+| s35932_T205   | Complete        |
+| s35932_T206   | Complete        |
+| s35932_T207   | Complete        |
+| s35932_T208   | Complete        |
+| s35932_T209   | Complete        |
+| s35932_T210   | Complete        |
+| s35932_T211   | Complete        |
+| s35932_T212   | Complete        |
+| s35932_T213   | Complete        |
+| s35932_T214   | Complete        |
+| s35932_T215   | Complete        |
+| s35932_T216   | Complete        |
+| s35932_T217   | Complete        |
+| s35932_T218   | Complete        |

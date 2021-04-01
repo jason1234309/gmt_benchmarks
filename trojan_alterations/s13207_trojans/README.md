@@ -119,43 +119,43 @@
 
 | Trojan Name   | Creation Status | Fasm2bels Status |
 | -----------   | --------------- | ---------------- |
-| s13207_T000   |
-| s13207_T001   |
-| s13207_T002   |
-| s13207_T003   |
-| s13207_T004   |
-| s13207_T005   |
-| s13207_T006   |
-| s13207_T007   |
-| s13207_T008   |
-| s13207_T009   |
-| s13207_T010   |
-| s13207_T011   |
-| s13207_T012   |
-| s13207_T013   |
-| s13207_T014   |
-| s13207_T015   |
-| s13207_T016   |
-| s13207_T017   |
-| s13207_T018   |
-| s13207_T019   |
-| s13207_T200   |
-| s13207_T201   |
-| s13207_T202   |
-| s13207_T203   |
-| s13207_T204   |
-| s13207_T205   |
-| s13207_T206   |
-| s13207_T207   |
-| s13207_T208   |
-| s13207_T209   |
-| s13207_T210   |
-| s13207_T211   |
-| s13207_T212   |
-| s13207_T213   |
-| s13207_T214   |
-| s13207_T215   |
-| s13207_T216   |
-| s13207_T217   |
-| s13207_T218   |
-| s13207_T219   |
+| s13207_T000   | Complete        |
+| s13207_T001   | Complete        |
+| s13207_T002   | Complete        |
+| s13207_T003   | Complete        |
+| s13207_T004   | Complete        |
+| s13207_T005   | Complete        |
+| s13207_T006   | Complete        |
+| s13207_T007   | Complete        |
+| s13207_T008   | Complete        |
+| s13207_T009   | Complete        |
+| s13207_T010   | Complete        |
+| s13207_T011   | Complete        |
+| s13207_T012   | Complete        |
+| s13207_T013   | Complete        |
+| s13207_T014   | Complete        |
+| s13207_T015   | Complete        |
+| s13207_T016   | Complete        |
+| s13207_T017   | Complete        |
+| s13207_T018   | Complete        |
+| s13207_T019   | Complete        |
+| s13207_T200   | Complete        |
+| s13207_T201   | Complete        |
+| s13207_T202   | Complete        |
+| s13207_T203   | Complete        |
+| s13207_T204   | Complete        |
+| s13207_T205   | Complete        |
+| s13207_T206   | Complete        |
+| s13207_T207   | Complete        |
+| s13207_T208   | Complete        |
+| s13207_T209   | Complete        |
+| s13207_T210   | Complete        |
+| s13207_T211   | Complete        |
+| s13207_T212   | Complete        |
+| s13207_T213   | Complete        |
+| s13207_T214   | Complete        |
+| s13207_T215   | Complete        |
+| s13207_T216   | Complete        |
+| s13207_T217   | Complete        |
+| s13207_T218   | Complete        |
+| s13207_T219   | Complete        |

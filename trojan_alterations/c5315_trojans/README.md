@@ -2,113 +2,113 @@
 
 | Trojan Name | Creation Status | Fasm2bels Status |
 | ----------- | --------------- | ---------------- |
-| c5315_T000  | 
-| c5315_T001  | 
-| c5315_T002  | 
-| c5315_T003  | 
-| c5315_T004  | 
-| c5315_T005  | 
-| c5315_T006  | 
-| c5315_T007  | 
-| c5315_T008  | 
-| c5315_T009  | 
-| c5315_T010  | 
-| c5315_T011  | 
-| c5315_T012  | 
-| c5315_T013  | 
-| c5315_T014  | 
-| c5315_T015  | 
-| c5315_T016  | 
-| c5315_T017  | 
-| c5315_T018  | 
-| c5315_T019  | 
-| c5315_T020  | 
-| c5315_T021  | 
-| c5315_T022  | 
-| c5315_T023  | 
-| c5315_T024  | 
-| c5315_T025  | 
-| c5315_T026  | 
-| c5315_T027  | 
-| c5315_T028  | 
-| c5315_T029  | 
-| c5315_T030  | 
-| c5315_T031  | 
-| c5315_T032  | 
-| c5315_T033  | 
-| c5315_T034  | 
-| c5315_T035  | 
-| c5315_T036  | 
-| c5315_T037  | 
-| c5315_T038  | 
-| c5315_T039  | 
-| c5315_T040  | 
-| c5315_T041  | 
-| c5315_T042  | 
-| c5315_T043  | 
-| c5315_T044  | 
-| c5315_T045  | 
-| c5315_T046  | 
-| c5315_T047  | 
-| c5315_T048  | 
-| c5315_T049  | 
-| c5315_T050  | 
-| c5315_T051  | 
-| c5315_T052  | 
-| c5315_T053  | 
-| c5315_T054  | 
-| c5315_T055  | 
-| c5315_T056  | 
-| c5315_T057  | 
-| c5315_T058  | 
-| c5315_T059  | 
-| c5315_T060  | 
-| c5315_T061  | 
-| c5315_T062  | 
-| c5315_T063  | 
-| c5315_T064  | 
-| c5315_T065  | 
-| c5315_T066  | 
-| c5315_T067  | 
-| c5315_T068  | 
-| c5315_T069  | 
-| c5315_T070  | 
-| c5315_T071  | 
-| c5315_T072  | 
-| c5315_T073  | 
-| c5315_T074  | 
-| c5315_T075  | 
-| c5315_T076  | 
-| c5315_T077  | 
-| c5315_T078  | 
-| c5315_T079  | 
-| c5315_T080  | 
-| c5315_T081  | 
-| c5315_T082  | 
-| c5315_T083  | 
-| c5315_T084  | 
-| c5315_T085  | 
-| c5315_T086  | 
-| c5315_T087  | 
-| c5315_T088  | 
-| c5315_T089  | 
-| c5315_T090  | 
-| c5315_T091  | 
-| c5315_T092  | 
-| c5315_T093  | 
-| c5315_T094  | 
-| c5315_T095  | 
-| c5315_T096  | 
-| c5315_T097  | 
-| c5315_T098  | 
-| c5315_T099  | 
-| c5315_T200  | 
-| c5315_T201  | 
-| c5315_T202  | 
-| c5315_T203  | 
-| c5315_T204  | 
-| c5315_T205  | 
-| c5315_T206  | 
-| c5315_T207  | 
-| c5315_T208  | 
-| c5315_T209  | 
+| c5315_T000  | Complete        | 
+| c5315_T001  | Complete        | 
+| c5315_T002  | Complete        | 
+| c5315_T003  | Complete        | 
+| c5315_T004  | Complete        | 
+| c5315_T005  | Complete        | 
+| c5315_T006  | Complete        | 
+| c5315_T007  | Complete        | 
+| c5315_T008  | Complete        | 
+| c5315_T009  | Complete        | 
+| c5315_T010  | Complete        | 
+| c5315_T011  | Complete        | 
+| c5315_T012  | Complete        | 
+| c5315_T013  | Complete        | 
+| c5315_T014  | Complete        | 
+| c5315_T015  | Complete        | 
+| c5315_T016  | Complete        | 
+| c5315_T017  | Complete        | 
+| c5315_T018  | Complete        | 
+| c5315_T019  | Complete        | 
+| c5315_T020  | Complete        | 
+| c5315_T021  | Complete        | 
+| c5315_T022  | Complete        | 
+| c5315_T023  | Complete        | 
+| c5315_T024  | Complete        | 
+| c5315_T025  | Complete        | 
+| c5315_T026  | Complete        | 
+| c5315_T027  | Complete        | 
+| c5315_T028  | Complete        | 
+| c5315_T029  | Complete        | 
+| c5315_T030  | Complete        | 
+| c5315_T031  | Complete        | 
+| c5315_T032  | Complete        | 
+| c5315_T033  | Complete        | 
+| c5315_T034  | Complete        | 
+| c5315_T035  | Complete        | 
+| c5315_T036  | Complete        | 
+| c5315_T037  | Complete        | 
+| c5315_T038  | Complete        | 
+| c5315_T039  | Complete        | 
+| c5315_T040  | Complete        | 
+| c5315_T041  | Complete        | 
+| c5315_T042  | Complete        | 
+| c5315_T043  | Complete        | 
+| c5315_T044  | Complete        | 
+| c5315_T045  | Complete        | 
+| c5315_T046  | Complete        | 
+| c5315_T047  | Complete        | 
+| c5315_T048  | Complete        | 
+| c5315_T049  | Complete        | 
+| c5315_T050  | Complete        | 
+| c5315_T051  | Complete        | 
+| c5315_T052  | Complete        | 
+| c5315_T053  | Complete        | 
+| c5315_T054  | Complete        | 
+| c5315_T055  | Complete        | 
+| c5315_T056  | Complete        | 
+| c5315_T057  | Complete        | 
+| c5315_T058  | Complete        | 
+| c5315_T059  | Complete        | 
+| c5315_T060  | Complete        | 
+| c5315_T061  | Complete        | 
+| c5315_T062  | Complete        | 
+| c5315_T063  | Complete        | 
+| c5315_T064  | Complete        | 
+| c5315_T065  | Complete        | 
+| c5315_T066  | Complete        | 
+| c5315_T067  | Complete        | 
+| c5315_T068  | Complete        | 
+| c5315_T069  | Complete        | 
+| c5315_T070  | Complete        | 
+| c5315_T071  | Complete        | 
+| c5315_T072  | Complete        | 
+| c5315_T073  | Complete        | 
+| c5315_T074  | Complete        | 
+| c5315_T075  | Complete        | 
+| c5315_T076  | Complete        | 
+| c5315_T077  | Complete        | 
+| c5315_T078  | Complete        | 
+| c5315_T079  | Complete        | 
+| c5315_T080  | Complete        | 
+| c5315_T081  | Complete        | 
+| c5315_T082  | Complete        | 
+| c5315_T083  | Complete        | 
+| c5315_T084  | Complete        | 
+| c5315_T085  | Complete        | 
+| c5315_T086  | Complete        | 
+| c5315_T087  | Complete        | 
+| c5315_T088  | Complete        | 
+| c5315_T089  | Complete        | 
+| c5315_T090  | Complete        | 
+| c5315_T091  | Complete        | 
+| c5315_T092  | Complete        | 
+| c5315_T093  | Complete        | 
+| c5315_T094  | Complete        | 
+| c5315_T095  | Complete        | 
+| c5315_T096  | Complete        | 
+| c5315_T097  | Complete        | 
+| c5315_T098  | Complete        | 
+| c5315_T099  | Complete        | 
+| c5315_T200  | Complete        | 
+| c5315_T201  | Complete        | 
+| c5315_T202  | Complete        | 
+| c5315_T203  | Complete        | 
+| c5315_T204  | Complete        | 
+| c5315_T205  | Complete        | 
+| c5315_T206  | Complete        | 
+| c5315_T207  | Complete        | 
+| c5315_T208  | Complete        | 
+| c5315_T209  | Complete        | 
