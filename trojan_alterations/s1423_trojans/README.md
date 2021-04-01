@@ -58,43 +58,43 @@
 
 | Trojan Name   | Creation Status | Fasm2bels Status |
 | -----------   | --------------- | ---------------- |
-| s1423_T000    |
-| s1423_T001    |
-| s1423_T002    |
-| s1423_T003    |
-| s1423_T004    |
-| s1423_T005    |
-| s1423_T006    |
-| s1423_T007    |
-| s1423_T008    |
-| s1423_T009    |
-| s1423_T010    |
-| s1423_T011    |
-| s1423_T012    |
-| s1423_T013    |
-| s1423_T014    |
-| s1423_T015    |
-| s1423_T016    |
-| s1423_T017    |
-| s1423_T018    |
-| s1423_T019    |
-| s1423_T200    |
-| s1423_T201    |
-| s1423_T202    |
-| s1423_T203    |
-| s1423_T204    |
-| s1423_T205    |
-| s1423_T206    |
-| s1423_T207    |
-| s1423_T208    |
-| s1423_T209    |
-| s1423_T210    |
-| s1423_T211    |
-| s1423_T212    |
-| s1423_T213    |
-| s1423_T214    |
-| s1423_T215    |
-| s1423_T216    |
-| s1423_T217    |
-| s1423_T218    |
-| s1423_T219    |
+| s1423_T000    | Complete        |
+| s1423_T001    | Complete        |
+| s1423_T002    | Complete        |
+| s1423_T003    | Complete        |
+| s1423_T004    | Complete        |
+| s1423_T005    | Complete        |
+| s1423_T006    | Complete        |
+| s1423_T007    | Complete        |
+| s1423_T008    | Complete        |
+| s1423_T009    | Complete        |
+| s1423_T010    | Complete        |
+| s1423_T011    | Complete        |
+| s1423_T012    | Complete        |
+| s1423_T013    | Complete        |
+| s1423_T014    | Complete        |
+| s1423_T015    | Complete        |
+| s1423_T016    | Complete        |
+| s1423_T017    | Complete        |
+| s1423_T018    | Complete        |
+| s1423_T019    | Complete        |
+| s1423_T200    | Complete        |
+| s1423_T201    | Complete        |
+| s1423_T202    | Complete        |
+| s1423_T203    | Complete        |
+| s1423_T204    | Complete        |
+| s1423_T205    | Complete        |
+| s1423_T206    | Complete        |
+| s1423_T207    | Complete        |
+| s1423_T208    | Complete        |
+| s1423_T209    | Complete        |
+| s1423_T210    | Complete        |
+| s1423_T211    | Complete        |
+| s1423_T212    | Complete        |
+| s1423_T213    | Complete        |
+| s1423_T214    | Complete        |
+| s1423_T215    | Complete        |
+| s1423_T216    | Complete        |
+| s1423_T217    | Complete        |
+| s1423_T218    | Complete        |
+| s1423_T219    | Complete        |

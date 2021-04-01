@@ -38,7 +38,7 @@
 | s13207_T431 | Complete        |                 |
 | s13207_T432 | Complete        |                 |
 | s13207_T433 | Syntax Error    |                 |
-| s13207_T434 |                 |                 |
+| s13207_T434 | Complete        |                 |
 | s13207_T435 | Complete        |                 |
 | s13207_T436 | Complete        |                 |
 | s13207_T437 | Complete        |                 |
