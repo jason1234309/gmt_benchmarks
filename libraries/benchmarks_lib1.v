@@ -924,6 +924,14 @@ endmodule
 // Or-And Inverters
 ///////////////////////////////////////////////////////////////////////////////
 
+module oai21s2 (DIN1, DIN2, DIN3, Q);
+    input DIN1;
+	input DIN2;
+	input DIN3;
+	output Q;
+	assign Q = !((DIN1 | DIN2) & DIN3);
+endmodule
+
 module oai21s3 (DIN1, DIN2, DIN3, Q);
     input DIN1;
 	input DIN2;
