@@ -231,7 +231,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | c5315               | Yes                         | Complete          | Small differences in IOB
 | c6288               | Yes                         | Complete          | <10 PIPs and IOB pulltype |
 | s1423scan           | Yes                         | Complete          | None |
-| s13207scan          | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| s13207scan          | Yes                         | Complete          | Missing net due to PUDC |
 | s15850scan          | Yes                         | Placed/Routed     |
 | s35932scan          | Yes                         | Placed/Routed     |
 | s27                 | Yes                         | Complete          | None |
@@ -247,8 +247,8 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s510                | Yes                         | Complete          | None |
 | s526                | Yes                         | Complete          | None |
 | s526n               | Yes                         | Complete          | None |
-| s641                | Yes                         | Complete          | Missing net |
-| s713                | Yes                         | Complete          | Missing net |
+| s641                | Yes                         | Complete          | Missing net due to PUDC |
+| s713                | Yes                         | Complete          | Missing net due to PUDC |
 | s820                | Yes                         | Complete          | None |
 | s832                | Yes                         | Complete          | None |
 | s838_1              | Yes                         | Complete          | None |
@@ -257,7 +257,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s1238               | Yes                         | Complete          | None |
 | s1488               | Yes                         | Complete          | None |
 | s1494               | Yes                         | Complete          | None |
-| s5378               | Yes                         | Complete          | Miss net ending in IOB X0Y144 |
+| s5378               | Yes                         | Complete          | Miss net due to PUDC |
 | s9234_1             | Yes                         | Complete          |
 | s13207              | Yes                         | Complete          |
 | s35932              | Yes                         | Complete          |
@@ -277,6 +277,8 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 ### A description of differences
 
 Description found [HERE](./fasm2bels_problems.md)
+
+Summary: The PUDC causes some issues when being placed. The Verilog file should describe connections correctly, but there are errors in how Fasm2bels handles PUDCs in the XDC file. That is explained in [this Issue](https://github.com/SymbiFlow/symbiflow-xc-fasm2bels/issues/27). We ignore the problems and so there is a missing net in the resulting placed/routed design.
 
 ## Trojan Benchmarks
 

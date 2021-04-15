@@ -91,3 +91,9 @@ Design s5378
 * What goes on in the Fasm2bels code?
 * What goes on in the Verilog file?
 * What goes on in the XDC file?
+
+# Answers I'm finding
+
+* X0Y143 differences in fasm files are actually just how prjxray represents IOB_X0Y144. Remember, IOB tiles have two sites. These are represented in prjxray as Y0 and Y1. I believe X0Y143_Y0 in prjxray actually refers to IOB_X0Y144.
+* The consistent difference I am finding in the two fasm files is that in the original, the site is configured as an output and then in the Fasm2bels output fasm file, the site has been changed to an input IO pin.
+* Looks like the Verilog file contains the connections correclty. So... Vivado somehow doesn't route it correctly?
