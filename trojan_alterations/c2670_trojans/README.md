@@ -2,103 +2,103 @@
 
 | Trojan Name | Creation Status | Fasm2bels Status |
 | ----------- | --------------- | ---------------- |
-| c2670_T000  | Complete        |
-| c2670_T001  | Complete        |
-| c2670_T002  | Complete        |
-| c2670_T003  | Complete        |
-| c2670_T004  | Complete        |
-| c2670_T005  | Complete        |
-| c2670_T006  | Complete        |
-| c2670_T007  | Complete        |
-| c2670_T008  | Complete        |
-| c2670_T009  | Complete        |
-| c2670_T010  | Complete        |
-| c2670_T011  | Complete        |
-| c2670_T012  | Complete        |
-| c2670_T013  | Complete        |
-| c2670_T014  | Complete        |
-| c2670_T015  | Complete        |
-| c2670_T016  | Complete        |
-| c2670_T017  | Complete        |
-| c2670_T018  | Complete        |
-| c2670_T019  | Complete        |
-| c2670_T020  | Complete        |
-| c2670_T021  | Complete        |
-| c2670_T022  | Complete        |
-| c2670_T023  | Complete        |
-| c2670_T024  | Complete        |
-| c2670_T025  | Complete        |
-| c2670_T026  | Complete        |
-| c2670_T027  | Complete        |
-| c2670_T028  | Complete        |
-| c2670_T029  | Complete        |
-| c2670_T030  | Complete        |
-| c2670_T031  | Complete        |
-| c2670_T032  | Complete        |
-| c2670_T033  | Complete        |
-| c2670_T034  | Complete        |
-| c2670_T035  | Complete        |
-| c2670_T036  | Complete        |
-| c2670_T037  | Complete        |
-| c2670_T038  | Complete        |
-| c2670_T039  | Complete        |
-| c2670_T040  | Complete        |
-| c2670_T041  | Complete        |
-| c2670_T042  | Complete        |
-| c2670_T043  | Complete        |
-| c2670_T044  | Complete        |
-| c2670_T045  | Complete        |
-| c2670_T046  | Complete        |
-| c2670_T047  | Complete        |
-| c2670_T048  | Complete        |
-| c2670_T049  | Complete        |
-| c2670_T050  | Complete        |
-| c2670_T051  | Complete        |
-| c2670_T052  | Complete        |
-| c2670_T053  | Complete        |
-| c2670_T054  | Complete        |
-| c2670_T055  | Complete        |
-| c2670_T056  | Complete        |
-| c2670_T057  | Complete        |
-| c2670_T058  | Complete        |
-| c2670_T059  | Complete        |
-| c2670_T060  | Complete        |
-| c2670_T061  | Complete        |
-| c2670_T062  | Complete        |
-| c2670_T063  | Complete        |
-| c2670_T064  | Complete        |
-| c2670_T065  | Complete        |
-| c2670_T066  | Complete        |
-| c2670_T067  | Complete        |
-| c2670_T068  | Complete        |
-| c2670_T069  | Complete        |
-| c2670_T070  | Complete        |
-| c2670_T071  | Complete        |
-| c2670_T072  | Complete        |
-| c2670_T073  | Complete        |
-| c2670_T074  | Complete        |
-| c2670_T075  | Complete        |
-| c2670_T076  | Complete        |
-| c2670_T077  | Complete        |
-| c2670_T078  | Complete        |
-| c2670_T079  | Complete        |
-| c2670_T080  | Complete        |
-| c2670_T081  | Complete        |
-| c2670_T082  | Complete        |
-| c2670_T083  | Complete        |
-| c2670_T084  | Complete        |
-| c2670_T085  | Complete        |
-| c2670_T086  | Complete        |
-| c2670_T087  | Complete        |
-| c2670_T088  | Complete        |
-| c2670_T089  | Complete        |
-| c2670_T090  | Complete        |
-| c2670_T091  | Complete        |
-| c2670_T092  | Complete        |
-| c2670_T093  | Complete        |
-| c2670_T094  | Complete        |
-| c2670_T095  | Complete        |
-| c2670_T096  | Complete        |
-| c2670_T097  | Complete        |
-| c2670_T098  | Complete        |
-| c2670_T099  | Complete        |
+| c2670_T000  | Complete        | Complete         |
+| c2670_T001  | Complete        | Complete         |
+| c2670_T002  | Complete        | Complete         |
+| c2670_T003  | Complete        | Complete         |
+| c2670_T004  | Complete        | Complete         |
+| c2670_T005  | Complete        | Complete         |
+| c2670_T006  | Complete        | Complete         |
+| c2670_T007  | Complete        | Complete         |
+| c2670_T008  | Complete        | Complete         |
+| c2670_T009  | Complete        | Complete         |
+| c2670_T010  | Complete        | Complete         |
+| c2670_T011  | Complete        | Complete         |
+| c2670_T012  | Complete        | Complete         |
+| c2670_T013  | Complete        | Complete         |
+| c2670_T014  | Complete        | Complete         |
+| c2670_T015  | Complete        | Complete         |
+| c2670_T016  | Complete        | Complete         |
+| c2670_T017  | Complete        | Complete         |
+| c2670_T018  | Complete        | Complete         |
+| c2670_T019  | Complete        | Complete         |
+| c2670_T020  | Complete        | Complete         |
+| c2670_T021  | Complete        | Complete         |
+| c2670_T022  | Complete        | Complete         |
+| c2670_T023  | Complete        | Complete         |
+| c2670_T024  | Complete        | Complete         |
+| c2670_T025  | Complete        | Complete         |
+| c2670_T026  | Complete        | Complete         |
+| c2670_T027  | Complete        | Complete         |
+| c2670_T028  | Complete        | Complete         |
+| c2670_T029  | Complete        | Complete         |
+| c2670_T030  | Complete        | Complete         |
+| c2670_T031  | Complete        | Complete         |
+| c2670_T032  | Complete        | Complete         |
+| c2670_T033  | Complete        | Complete         |
+| c2670_T034  | Complete        | Complete         |
+| c2670_T035  | Complete        | Complete         |
+| c2670_T036  | Complete        | Complete         |
+| c2670_T037  | Complete        | Complete         |
+| c2670_T038  | Complete        | Complete         |
+| c2670_T039  | Complete        | Complete         |
+| c2670_T040  | Complete        | Complete         |
+| c2670_T041  | Complete        | Complete         |
+| c2670_T042  | Complete        | Complete         |
+| c2670_T043  | Complete        | Complete         |
+| c2670_T044  | Complete        | Complete         |
+| c2670_T045  | Complete        | Complete         |
+| c2670_T046  | Complete        | Complete         |
+| c2670_T047  | Complete        | Complete         |
+| c2670_T048  | Complete        | Complete         |
+| c2670_T049  | Complete        | Complete         |
+| c2670_T050  | Complete        | Complete         |
+| c2670_T051  | Complete        | Complete         |
+| c2670_T052  | Complete        | Complete         |
+| c2670_T053  | Complete        | Complete         |
+| c2670_T054  | Complete        | Complete         |
+| c2670_T055  | Complete        | Complete         |
+| c2670_T056  | Complete        | Complete         |
+| c2670_T057  | Complete        | Complete         |
+| c2670_T058  | Complete        | Complete         |
+| c2670_T059  | Complete        | Complete         |
+| c2670_T060  | Complete        | Complete         |
+| c2670_T061  | Complete        | Complete         |
+| c2670_T062  | Complete        | Complete         |
+| c2670_T063  | Complete        | Complete         |
+| c2670_T064  | Complete        | Complete         |
+| c2670_T065  | Complete        | Complete         |
+| c2670_T066  | Complete        | Complete         |
+| c2670_T067  | Complete        | Complete         |
+| c2670_T068  | Complete        | Complete         |
+| c2670_T069  | Complete        | Complete         |
+| c2670_T070  | Complete        | Complete         |
+| c2670_T071  | Complete        | Complete         |
+| c2670_T072  | Complete        | Complete         |
+| c2670_T073  | Complete        | Complete         |
+| c2670_T074  | Complete        | Complete         |
+| c2670_T075  | Complete        | Complete         |
+| c2670_T076  | Complete        | Complete         |
+| c2670_T077  | Complete        | Complete         |
+| c2670_T078  | Complete        | Complete         |
+| c2670_T079  | Complete        | Complete         |
+| c2670_T080  | Complete        | Complete         |
+| c2670_T081  | Complete        | Complete         |
+| c2670_T082  | Complete        | Complete         |
+| c2670_T083  | Complete        | Complete         |
+| c2670_T084  | Complete        | Complete         |
+| c2670_T085  | Complete        | Complete         |
+| c2670_T086  | Complete        | Complete         |
+| c2670_T087  | Complete        | Complete         |
+| c2670_T088  | Complete        | Complete         |
+| c2670_T089  | Complete        | Complete         |
+| c2670_T090  | Complete        | Complete         |
+| c2670_T091  | Complete        | Complete         |
+| c2670_T092  | Complete        | Complete         |
+| c2670_T093  | Complete        | Complete         |
+| c2670_T094  | Complete        | Complete         |
+| c2670_T095  | Complete        | Complete         |
+| c2670_T096  | Complete        | Complete         |
+| c2670_T097  | Complete        | Complete         |
+| c2670_T098  | Complete        | Complete         |
+| c2670_T099  | Complete        | Complete         |

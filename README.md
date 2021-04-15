@@ -10,6 +10,7 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 - [Benchmark Descriptions](#benchmark-descriptions)
   - [Design Utilizations](#design-utilizations)
   - [Benchmark Statuses](#benchmark-statuses)
+      - [A description of differences](#a-description-of-differences)
   - [Trojan Benchmarks](#trojan-benchmarks)
 - [How to create new Benchmarks](#how-to-create-new-benchmarks)
 
@@ -233,35 +234,35 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s13207scan          | Yes                         | Complete          | <10 PIPs and IOB pulltype |
 | s15850scan          | Yes                         | Placed/Routed     |
 | s35932scan          | Yes                         | Placed/Routed     |
-| s27                 | Yes                         | 
-| s208_1              | Yes                         | 
-| s298                | Yes                         | 
-| s344                | Yes                         | 
-| s349                | Yes                         | 
-| s382                | Yes                         | 
-| s386                | Yes                         | 
-| s400                | Yes                         | 
-| s420_1              | Yes                         | 
-| s444                | Yes                         | 
-| s510                | Yes                         | 
-| s526                | Yes                         | 
-| s526n               | Yes                         | 
-| s641                | Yes                         | 
-| s713                | Yes                         | 
-| s820                | Yes                         | 
-| s832                | Yes                         | 
-| s838_1              | Yes                         | 
-| s953                | Yes                         |
-| s1196               | Yes                         | 
-| s1238               | Yes                         | 
-| s1488               | Yes                         | 
-| s1494               | Yes                         | 
-| s5378               | Yes                         | 
-| s9234_1             | Yes                         | 
-| s13207              | Yes                         | 
-| s35932              | Yes                         | 
-| s38417              | Yes                         | 
-| s38584              | Yes                         | 
+| s27                 | Yes                         | Complete          | None |
+| s208_1              | Yes                         | Complete          | None |
+| s298                | Yes                         | Complete          | None |
+| s344                | Yes                         | Complete          | None |
+| s349                | Yes                         | Complete          | None |
+| s382                | Yes                         | Complete          | None |
+| s386                | Yes                         | Complete          | None |
+| s400                | Yes                         | Complete          | None |
+| s420_1              | Yes                         | Complete          | None |
+| s444                | Yes                         | Complete          | None |
+| s510                | Yes                         | Complete          | None |
+| s526                | Yes                         | Complete          | None |
+| s526n               | Yes                         | Complete          | None |
+| s641                | Yes                         | Complete          |
+| s713                | Yes                         | Complete          |
+| s820                | Yes                         | Complete          |
+| s832                | Yes                         | Complete          |
+| s838_1              | Yes                         | Complete          |
+| s953                |                             |
+| s1196               | Yes                         | Complete          |
+| s1238               | Yes                         | Complete          |
+| s1488               | Yes                         | Complete          |
+| s1494               | Yes                         | Complete          |
+| s5378               | Yes                         | Complete          |
+| s9234_1             | Yes                         | Complete          |
+| s13207              | Yes                         | Complete          |
+| s35932              | Yes                         | Complete          |
+| s38417              | Yes                         | Placed/Routed     |
+| s38584              | Yes                         | Placed/Routed     |
 
 
 **After Fasm2bels is successfully run, a diff between the original bitstream's FASM file and the fasm2bels generated FASM file is helfpul in knowing what Fasm2bels did not do correctly. The descriptions are not meant to be exhaustive but rather to show a brief summary of any differences.
@@ -273,6 +274,33 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 * s38584 - Too many ports for a device supported by Prjxray
 * rs232 - bitCell_cntrH in u_xmit.v is driven by multiple nets
 
+#### A description of differences
+
+Design s641:
+* Original has additional pips:
+  * INT_L_X0Y112.NR1BEG0.LOGIC_OUTS_L18 (problem PIP? INT_L_X0Y112/INT_L.LOGIC_OUTS_L18->>NR1BEG0)
+  * INT_L_X0Y113.LV_L0.NR1END0
+  * INT_L_X0Y131.NN6BEG3.LV_L18
+  * INT_L_X0Y137.NN6BEG3.NN6END3
+  * INT_L_X0Y143.WR1BEG_S0.NN6END3
+  * INT_L_X0Y144.BYP_ALT0.ER1END0
+  * INT_L_X0Y144.IMUX_L34.BYP_BOUNCE0
+* Result: This IOB ends up not being driven: [get_sites IOB_X0Y144]
+  * See two dcp files opened in the gui for difference
+  * It should be driven by this input pad [get_sites IOB_X0Y112]
+  * So for some reason, what Fasm2bels ends up doing is it replaces an IOB being directly driven by an IOB by an IOB driven by a HARD 1. Seems like a bug.
+
+Design s713
+* Original has additional pips:
+  * INT_L_X0Y112.NN6BEG0.LOGIC_OUTS_L18
+  * INT_L_X0Y118.LV_L0.NN6END0
+  * INT_L_X0Y136.NN6BEG3.LV_L18
+  * INT_L_X0Y142.NL1BEG2.NN6END3
+  * INT_L_X0Y143.NL1BEG1.NL1END2
+  * INT_L_X0Y144.IMUX_L34.NL1END1
+* Result: 
+  * Connect5ion between IOB_X0Y144 and IOB_X0Y112 is missing
+
 ## Trojan Benchmarks
 
 The following table reports the trojans that have been added to this repo and their statuses in being run through Fasm2bels.
@@ -280,13 +308,13 @@ The following table reports the trojans that have been added to this repo and th
 | Original Benchmark | Trojan Alterations | Successfully Created Trojan Designs | Successfully Run Through Fasm2bels |
 | ------------------ | ------------------ | ----------------------------------- | ---------------------------------- |
 | s1423scan          | 51                 | 50
-| s13207scan         | 110                | 
-| s15850scan         | 110                |
-| s35932scan         | 63                 |
-| c2670              | 
-| c3540              | 
-| c5313              | 110
-| c6288              | 110
+| s13207scan         | 150                | 139
+| s15850scan         | 139                | 134
+| s35932scan         | 63                 | 
+| c2670              | 100                | 100
+| c3540              | 100                | 100
+| c5313              | 110                | 110
+| c6288              | 110                | 110
 
 # How to create new Benchmarks
 
