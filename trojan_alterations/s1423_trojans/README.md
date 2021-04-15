@@ -11,7 +11,7 @@
 | s1423_T406 | Complete         | Complete         | 
 | s1423_T407 | Complete         | Complete         | 
 | s1423_T408 | Complete         | Complete         | 
-| s1423_T409 | Syntax Error     | Complete         | 
+| s1423_T409 | Syntax Error     |                  | 
 | s1423_T410 | Complete         | Complete         | 
 | s1423_T411 | Complete         | Complete         | 
 | s1423_T412 | Complete         | Complete         | 
