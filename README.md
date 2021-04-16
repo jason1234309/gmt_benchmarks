@@ -10,7 +10,7 @@ This directory contains a series of RTL benchmarks, many of which have  been use
 - [Benchmark Descriptions](#benchmark-descriptions)
   - [Design Utilizations](#design-utilizations)
   - [Benchmark Statuses](#benchmark-statuses)
-      - [A description of differences](#a-description-of-differences)
+    - [Fasm2bels PUDC Issue](#fasm2bels-pudc-issue)
   - [Trojan Benchmarks](#trojan-benchmarks)
 - [How to create new Benchmarks](#how-to-create-new-benchmarks)
 
@@ -210,15 +210,15 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | 8080                | Yes                         | Complete          | None
 | MIPS 16 (opencore)* |                             |                   | 
 | MIPS 16 (HAL)*      |                             |                   |
-| oc8051              | Yes                         | Complete          | Small differences in IOB including TBYTESRC |
+| oc8051              | Yes                         | Complete          | Missing net due to PUDC |
 | AES (opencore)      | Yes                         | Complete          | RAMB18 settings |
 | AES (IWLS)          | Yes                         | Complete          | RAMB18 settings |
-| b15                 | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| b15                 | Yes                         | Complete          | Missing net due to PUDC |
 | s38584_scan*        |                             |                   | 
 | MC8051              |                             |                   | 
 | rs232*              |                             |                   |
 | openMSP430          | Yes                         | Complete          | DSP and some PIPs (associated with DSP tile?)
-| basicRSA            | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| basicRSA            | Yes                         | Complete          | Missing net due to PUDC |
 | ae18                | Yes                         | Placed/Routed     |
 | Ethernet Mac        | Yes                         | Complete          | <10 PIPs and <10 RAMB18 settings |
 | DES (Area optimized) | Yes                        | Placed/Routed     |
@@ -226,10 +226,10 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | FPU                 | Yes                         | Complete          | DSP and >100 PIPs (associated with DSP tile?)
 | s1423               | Yes                         | Complete          | None
 | s15850              | Yes                         | Complete          | Small differences in IOB
-| c2670               | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| c2670               | Yes                         | Complete          | Missing net due to PUDC |
 | c3540               | Yes                         | Placed/Routed     |
 | c5315               | Yes                         | Complete          | Small differences in IOB
-| c6288               | Yes                         | Complete          | <10 PIPs and IOB pulltype |
+| c6288               | Yes                         | Complete          | Missing net due to PUDC |
 | s1423scan           | Yes                         | Complete          | None |
 | s13207scan          | Yes                         | Complete          | Missing net due to PUDC |
 | s15850scan          | Yes                         | Placed/Routed     |
@@ -257,10 +257,10 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s1238               | Yes                         | Complete          | None |
 | s1488               | Yes                         | Complete          | None |
 | s1494               | Yes                         | Complete          | None |
-| s5378               | Yes                         | Complete          | Miss net due to PUDC |
-| s9234_1             | Yes                         | Complete          |
-| s13207              | Yes                         | Complete          |
-| s35932              | Yes                         | Complete          |
+| s5378               | Yes                         | Complete          | Missing net due to PUDC |
+| s9234_1             | Yes                         | Complete          | Missing net due to PUDC |
+| s13207              | Yes                         | Complete          | Missing net due to PUDC, possibly other IO problems? |
+| s35932              | Yes                         | Complete          | Missing net due to PUDC |
 | s38417              | Yes                         | Placed/Routed     |
 | s38584              | Yes                         | Placed/Routed     |
 
@@ -274,11 +274,13 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 * s38584 - Too many ports for a device supported by Prjxray
 * rs232 - bitCell_cntrH in u_xmit.v is driven by multiple nets
 
-### A description of differences
+### Fasm2bels PUDC Issue
 
 Description found [HERE](./fasm2bels_problems.md)
 
-Summary: The PUDC causes some issues when being placed. The Verilog file should describe connections correctly, but there are errors in how Fasm2bels handles PUDCs in the XDC file. That is explained in [this Issue](https://github.com/SymbiFlow/symbiflow-xc-fasm2bels/issues/27). We ignore the problems and so there is a missing net in the resulting placed/routed design.
+Summary: The PUDC causes some issues when being placed. The Verilog file should describe connections correctly, but there are errors in how Fasm2bels handles PUDCs in the XDC file. That is explained in [this Issue](https://github.com/SymbiFlow/symbiflow-xc-fasm2bels/issues/27). Normally, whenever this PUDC is present in a design, it would break Fasm2bels. However, we found a work around by commenting out an assert statement in Fasm2bels and using the `--allow_orphan_sinks` option when running Fasm2bels. 
+
+However, by using this workaround, Fasm2bels does not properly interpret a net using the PUDC, and thus, the net isn't properly created in Fasm2bel's output.
 
 ## Trojan Benchmarks
 
@@ -304,10 +306,10 @@ The following table reports the trojans that have been added to this repo and th
     * `report_utilization -file ./utilization_report.txt`
   * Write a DCP checkpoint and a bitstream
 * If cell libraries do not exist for the given Verilog file:
-  * Copy `GMT_LOCATION/gmt/fasm2bels/trusthub_testing/gmt_trusthub_library.v` to the RTL folder of the design
+  * Copy `GMT_LOCATION/gmt/fasm2bels/fasm2bels_run/gmt_trusthub_library.v` to the RTL folder of the design
   * If there still missing cells, look up the ASIC cell the Verilog is referencing and create a new Verilog model for it in the gmt_trusthub_library.v file.
 * Run script to run fasm2bels analysis:
-  * `source GMT_LOCATION/gmt/fasm2bels/trusthub_testing/fasm2bels_run_and_compare.py [bit file] [fasm2bels main directory path] [prjxray main directory path] [conda environment used with fasm2bels]`
+  * `source GMT_LOCATION/gmt/fasm2bels/fasm2bels_run/fasm2bels_run_and_compare.py [bit file] [fasm2bels main directory path] [prjxray main directory path] [conda environment used with fasm2bels]`
   * Be sure to use `source` because Conda environments cannot be turned on/off without sourcing the script.
   * prjxray has recently been formatting their database in a way that messes with fasm2bels. It may be neccessary to copy the node_wires.json, tileconn.json, and tilegrid.json files from the general part folder (prjxray/database/artix7/xc7a200t) to the part specific folder (prjxray/database/artix7/xc7a200tffg1156-1).
   * Script will create a build directory containing fasm2bels output files and a report directory containing logs of the different processes

@@ -872,3 +872,96 @@ module DFFNX2 (D, CLK, Q, QN);
 	 assign QN = !Q;
 	 
 endmodule
+
+// Full Adder Size 1
+module FADDX1 (A, B, CI, CO, S);
+	input A;
+	input B;
+	input CI;
+	output CO;
+	output S;
+
+	assign S = ^{A,B,CI};
+	assign CO = (A & B) | (A & CI) | (B & CI);
+endmodule
+
+// Half Adder Size 1
+module HADDX1 (A0, B0, C1, SO);
+	input A0;
+	input B0;
+	output C1;
+	output SO;
+
+	assign C1 = A0 & B0;
+	assign SO = A0 ^ B0;
+endmodule
+
+// Scan Pos Edge DFF w/Async Low-Active Reset
+module SDFFARX1 (D, SI, SE, CLK, RSTB, Q, QN);
+	output QN;
+	output Q;
+	input D;
+	input SI;
+	input SE;
+	input CLK;
+	input RSTB;
+
+	wire QN;
+	reg Q;
+	wire D;
+	wire SI;
+	wire SE;
+	wire CLK;
+	wire RSTB;
+	
+	assign nQ = SE ? SI : D;
+
+	always @(posedge CLK or negedge RSTB)
+		if (!RSTB) Q <= 0;
+		else Q <= nQ;
+	
+	assign QN = ~Q;
+
+endmodule
+
+// Pos-Edge DFF w/Async Low-Active Reset
+module DFFARX1 (D, CLK, RSTB, Q, QN);
+	output QN;
+	output Q;
+	input D;
+	input CLK;
+	input RSTB;
+
+	wire QN;
+	reg Q;
+	wire D;
+	wire CLK;
+	wire RSTB;
+
+	always @(negedge RSTB or posedge CLK)
+		if (!RSTB) Q <= 0;
+		else Q <= D;
+
+	assign QN = ~Q;
+endmodule
+
+// High-Active Latch w/ Async Low-Active Reset
+module LARX1 (Q, QN, D, RSTB, CLK);
+	output QN;
+	output Q;
+	input D;
+	input CLK;
+	input RSTB;
+
+	wire QN;
+	reg Q;
+	wire D;
+	wire CLK;
+	wire RSTB;
+
+	always @(negedge RSTB or posedge CLK)
+		if (!RSTB) Q <= 0;
+		else Q <= D;
+
+	assign QN = ~Q;
+endmodule

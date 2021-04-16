@@ -140,6 +140,12 @@ endmodule
 * Other Cells
 ****************************************************************************************/
 
+module INVX0 (A, Y);
+	input A;
+	output Y;
+	assign Y = !A;
+endmodule
+
 module INVX1 (A, Y);
 	input A;
 	output Y;
