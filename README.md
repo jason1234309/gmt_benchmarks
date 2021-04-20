@@ -110,6 +110,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | s38417  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | s38584  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| b19     | Unknown | Low-level       | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
@@ -201,6 +202,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932        | 1483        | 0       | 1728        | 0           | 0     | 357   |
 | s38417        | 1818        | 0       | 1478        | 0           | 0     | 136   |
 | s38584        | 1296        | 0       | 1159        | 0           | 0     | 291   |
+| b19           | 
 
 ## Benchmark Statuses
 
@@ -263,6 +265,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932              | Yes                         | Complete          | Missing net due to PUDC |
 | s38417              | Yes                         | Placed/Routed     |
 | s38584              | Yes                         | Placed/Routed     |
+| b19                 | 
 
 
 **After Fasm2bels is successfully run, a diff between the original bitstream's FASM file and the fasm2bels generated FASM file is helfpul in knowing what Fasm2bels did not do correctly. The descriptions are not meant to be exhaustive but rather to show a brief summary of any differences.
@@ -288,14 +291,14 @@ The following table reports the trojans that have been added to this repo and th
 
 | Original Benchmark | Trojan Alterations | Successfully Created Trojan Designs | Successfully Run Through Fasm2bels |
 | ------------------ | ------------------ | ----------------------------------- | ---------------------------------- |
-| s1423scan          | 51                 | 50
-| s13207scan         | 150                | 139
-| s15850scan         | 139                | 134
-| s35932scan         | 63                 | 
-| c2670              | 100                | 100
-| c3540              | 100                | 100
-| c5313              | 110                | 110
-| c6288              | 110                | 110
+| s1423scan          | 91                 | 90                                  | 90                                 |
+| s13207scan         | 150                | 139                                 | 139                                |
+| s15850scan         | 139                | 134                                 | 134                                |
+| s35932scan         | 102                | 98                                  | 98                                 |
+| c2670              | 100                | 100                                 | 100                                |
+| c3540              | 100                | 100                                 | 100                                |
+| c5313              | 110                | 110                                 | 110                                |
+| c6288              | 110                | 110                                 | 110                                |
 
 # How to create new Benchmarks
 

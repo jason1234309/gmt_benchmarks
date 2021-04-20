@@ -114,6 +114,13 @@ module AND2X2 (IN1, IN2, Q);
 	 assign Q = IN1 & IN2;
 endmodule
 
+module AND2X4 (IN1, IN2, Q);
+    input IN1;
+	 input IN2;
+	 output Q;
+	 assign Q = IN1 & IN2;
+endmodule
+
 module AND3X1 (IN1, IN2, IN3, Q);
     input IN1;
 	 input IN2;
@@ -774,6 +781,20 @@ module MUX21X2 (IN1, IN2, S, Q);
 	 assign Q = (IN1 & IN2) | ( !S & IN1) | (S & IN2);
 endmodule
 
+module MUX41X1 (IN1, IN2, IN3, IN4, S0, S1, Q);
+    input IN1;
+	 input IN2;
+	 input IN3;
+	 input IN4;
+	 input S0;
+	 input S1;
+	 output Q;
+	 assign Q = ( !S1 & !S0 & IN1) |
+	            ( !S1 &  S0 & IN2) |
+					(  S1 & !S0 & IN3) |
+					(  S1 &  S0 & IN4);
+endmodule
+
 module MUX41X2 (IN1, IN2, IN3, IN4, S0, S1, Q);
     input IN1;
 	 input IN2;
@@ -873,7 +894,7 @@ module DFFNX2 (D, CLK, Q, QN);
 	 
 endmodule
 
-// Full Adder Size 1
+// Full Adder 1-bit
 module FADDX1 (A, B, CI, CO, S);
 	input A;
 	input B;
@@ -884,6 +905,19 @@ module FADDX1 (A, B, CI, CO, S);
 	assign S = ^{A,B,CI};
 	assign CO = (A & B) | (A & CI) | (B & CI);
 endmodule
+
+// Full Adder 1-bit
+module FADDX2 (A, B, CI, CO, S);
+	input A;
+	input B;
+	input CI;
+	output CO;
+	output S;
+
+	assign S = ^{A,B,CI};
+	assign CO = (A & B) | (A & CI) | (B & CI);
+endmodule
+
 
 // Half Adder Size 1
 module HADDX1 (A0, B0, C1, SO);
@@ -964,4 +998,86 @@ module LARX1 (Q, QN, D, RSTB, CLK);
 		else Q <= D;
 
 	assign QN = ~Q;
+endmodule
+
+//High to Low Level Shifter/ Active Low Enable
+module LSDNENX2 (D, ENB, Q);
+    input D;
+	 input ENB;
+	 output Q;
+	 assign Q = (!ENB) | D;
+endmodule
+
+// High to low level shifter/active low enable
+module LSDNENX8 (D, ENB, Q);
+	input D;
+	input ENB;
+	output Q;
+	assign Q = (!ENB) | D;
+endmodule
+
+module ISOLORX1 (D, ISO, Q);
+    input D;
+	 input ISO;
+	 output Q;
+	 assign Q = D | ISO;
+endmodule
+
+// Always on non-inverting buffer
+module AOBUFX1 (IN, Q);
+	input IN;
+	output Q;
+	assign Q = IN;
+endmodule
+
+
+// Always on non-inverting buffer
+module AOBUFX2 (IN, Q);
+	input IN;
+	output Q;
+	assign Q = IN;
+endmodule
+
+// High to low level shifter
+module LSDNX1 (D, Q);
+	input D;
+	output Q;
+	assign Q = D;
+endmodule
+
+// High to low level shifter
+module LSDNX2 (D, Q);
+	input D;
+	output Q;
+	assign Q = D;
+endmodule
+
+// High to low level shifter
+module LSDNX4 (D, Q);
+	input D;
+	output Q;
+	assign Q = D;
+endmodule
+
+// High to low level shifter
+module LSDNX8 (D, Q);
+	input D;
+	output Q;
+	assign Q = D;
+endmodule
+
+// Hold 1 Isolation Cell (logic OR)
+module ISOLORX1 (D, ISO, Q);
+	input D;
+	input ISO;
+	output Q;
+	assign Q = D | ISO;
+endmodule
+
+// Hold 1 Isolation Cell (logic OR)
+module ISOLORX2 (D, ISO, Q);
+	input D;
+	input ISO;
+	output Q;
+	assign Q = D | ISO;
 endmodule
