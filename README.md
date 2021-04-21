@@ -306,11 +306,8 @@ The following table reports the trojans that have been added to this repo and th
 # How to create new Benchmarks
 
 * Send through Vivado to create a bitstream:
-  * Use this tcl command to place input/output ports of the chip: 
-    * `place_ports [get_ports *]`
-  * Use this tcl command to get a utilization report of the placed and routed design
-    * `report_utilization -file ./utilization_report.txt`
-  * Write a DCP checkpoint and a bitstream
+  * Run `compile_benchmark.tcl` (found in tools directory) with arguments [top-level module] [part-name]
+  * This has Vivado place ports, write a utilization report of the placed and routed design, write a DCP checkpoint, write EDIF and Verilog netlists, and write a bitstream.
 * If cell libraries do not exist for the given Verilog file:
   * Copy `GMT_LOCATION/gmt/fasm2bels/fasm2bels_run/gmt_trusthub_library.v` to the RTL folder of the design
   * If there still missing cells, look up the ASIC cell the Verilog is referencing and create a new Verilog model for it in the gmt_trusthub_library.v file.
