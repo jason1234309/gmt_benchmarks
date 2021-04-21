@@ -202,7 +202,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932        | 1483        | 0       | 1728        | 0           | 0     | 357   |
 | s38417        | 1818        | 0       | 1478        | 0           | 0     | 136   |
 | s38584        | 1296        | 0       | 1159        | 0           | 0     | 291   |
-| b19           | 
+| b19           | 27704       | 0       | 6047        | 0           | 0     | 254   |
 
 ## Benchmark Statuses
 
@@ -265,7 +265,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932              | Yes                         | Complete          | Missing net due to PUDC |
 | s38417              | Yes                         | Placed/Routed     |
 | s38584              | Yes                         | Placed/Routed     |
-| b19                 | 
+| b19                 | Yes                         | 
 
 
 **After Fasm2bels is successfully run, a diff between the original bitstream's FASM file and the fasm2bels generated FASM file is helfpul in knowing what Fasm2bels did not do correctly. The descriptions are not meant to be exhaustive but rather to show a brief summary of any differences.
@@ -299,6 +299,9 @@ The following table reports the trojans that have been added to this repo and th
 | c3540              | 100                | 100                                 | 100                                |
 | c5313              | 110                | 110                                 | 110                                |
 | c6288              | 110                | 110                                 | 110                                |
+| AES                | 22                 | 17
+| b15                | 4                  | 4
+| b19                | 5                  | 5
 
 # How to create new Benchmarks
 
