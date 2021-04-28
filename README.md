@@ -13,6 +13,7 @@ This directory contains a series of RTL benchmarks, many of which have  been use
     - [Fasm2bels PUDC Issue](#fasm2bels-pudc-issue)
   - [Trojan Benchmarks](#trojan-benchmarks)
 - [How to create new Benchmarks](#how-to-create-new-benchmarks)
+- [Status](#status)
 
 # Benchmark Organization
 
@@ -320,3 +321,9 @@ The following table reports the trojans that have been added to this repo and th
   * Use prjxray's bit2fasm.py to create a FASM file
   * Use fasm2bels to read in the FASM file and create the output Verilog and XDC files
 
+# Status
+
+* Most non-trojan benchmarks from Trusthub, the netlist understanding papers, and IWLS's ISCAS designs have been finished.
+* We are currently working through Trusthub's trojan alterations. We have finished the TRIT-TC and TRIT-TS trojan alterations as well as the AES trojan alterations.
+  * b15 and b19 trojan alterations have original designs but we still need to run their bitstreams through fasm2bels.
+* Future work: Finish Trust-hub trojan alterations and then move on to other IWLS designs.
