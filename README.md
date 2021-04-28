@@ -265,7 +265,7 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 | s35932              | Yes                         | Complete          | Missing net due to PUDC |
 | s38417              | Yes                         | Placed/Routed     |
 | s38584              | Yes                         | Placed/Routed     |
-| b19                 | Yes                         | 
+| b19                 | Yes                         | Complete          |
 
 
 **After Fasm2bels is successfully run, a diff between the original bitstream's FASM file and the fasm2bels generated FASM file is helfpul in knowing what Fasm2bels did not do correctly. The descriptions are not meant to be exhaustive but rather to show a brief summary of any differences.
