@@ -64,9 +64,9 @@ proc get_site_types {} {
 
 
 
-open_run impl_1
+open_checkpoint [glob *.dcp]
 
-puts "Opened implemented design..."
+puts "Opened dcp..."
 
 set tile_types [get_tile_types [get_design_tiles]]
 
