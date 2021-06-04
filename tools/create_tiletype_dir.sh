@@ -15,3 +15,6 @@ done
 rm -f vivado*.log
 rm -f vivado*.jou
 echo "finished"
+
+
+#so for the tcl script I need to add logic that sees if a site has alternate sights or not and if it does, print out the cell that is placed at the sight

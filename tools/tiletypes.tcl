@@ -26,17 +26,21 @@ proc get_tile_types { tiles} {
     return $types
 }
 
-proc get_site_types { tiles} {
+proc get_site_types {} {
     set potential_types []
-    foreach T $tiles {
-        set site_type [get_property SITE_TYPE $T]
-        lappend potential_types "SITE_TYPE: "
-        lappend potential_types $site_type
-        set alternate_types {get_property ALTERNATE_SITE_TYPES $T}
-        lappend potential_types "\nALTERNATE_SITE_TYPES: "
-        lappend potential_types $alternate_types
-        lappend potential_types "\n"
+    foreach C [get_cells] {
+        set cell_name [get_cells $C]
+        if {[get_sites -of_objects $cell_name] != ""} {
+            set site_type [get_property SITE_TYPE [get_sites -of_objects $cell_name]]
+            puts $site_type
+            set alternate_type [get_property  ALTERNATE_SITE_TYPES [get_sites -of_objects $cell_name]]
+            puts $alternate_type
+        } else {
+            puts "$cell_name does not have a site"
+        }
+        
     }
+        
     return $potential_types
 }
 
@@ -46,11 +50,10 @@ proc get_site_types { tiles} {
 #    foreach C [get_cells] {
 #        set loc [get_property "LOC" $C]
 #        if { $loc != ""} {
-#            set currentSite [get_sites -of $c]
+#            set currentSite [get_sites -of $C]
 #            if { [llen $sites] == 0 } {
 #                set sites [get_sites -of $C]
-#            }
-#            else {
+#            } else {
 #                lappend sites [get_sites -of $C]
 #            }
 #        }
@@ -60,13 +63,13 @@ proc get_site_types { tiles} {
 
 
 
-open_checkpoint [glob *.dcp]
+open_run impl_1
 
-puts "Opened dcp..."
+puts "Opened implemented design..."
 
 set tile_types [get_tile_types [get_design_tiles]]
 
-set site_types [get_site_types [get_design_tiles]]
+set site_types [get_site_types]
 
 set f [open tile_types.lst w]
 
