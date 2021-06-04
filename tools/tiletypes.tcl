@@ -32,15 +32,16 @@ proc get_site_types {} {
         set cell_name [get_cells $C]
         if {[get_sites -of_objects $cell_name] != ""} {
             set site_type [get_property SITE_TYPE [get_sites -of_objects $cell_name]]
-            puts $site_type
+            lappend potential_types "$cell_name"
+            lappend potential_types $site_type
             set alternate_type [get_property  ALTERNATE_SITE_TYPES [get_sites -of_objects $cell_name]]
-            puts $alternate_type
+            lappend potential_types $alternate_type
+            lappend potential_types "\n"
         } else {
-            puts "$cell_name does not have a site"
+            lappend potential_types "$cell_name does not have a site"
+            lappend potential_types "\n"
         }
-        
-    }
-        
+    }        
     return $potential_types
 }
 
