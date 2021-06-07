@@ -58,7 +58,13 @@ proc get_cell_used_sites {} {
         } else {
             continue
         }
+        if {[get_property "LOC" $cell_name] != ""} {
+            set Tile [get_tiles -of [get_property "LOC" $cell_name]]
+        } else {
+            continue
+        }
         lappend Sites_Used "Cell: $cell_name"
+        lappend Sites_Used ", Tile_Type: $Tile"
         foreach T $potential_types {
             if {[catch {set_property MANUAL_ROUTING $T [get_sites -of_objects $cell_name]} err] == 0 && $T != ""} {
                 lappend Sites_Used ", Used_Site_Type: $T"
