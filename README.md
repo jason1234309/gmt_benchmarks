@@ -39,79 +39,68 @@ Creating a benchmark involves finding a design's RTL code, writing an original b
 
 # Benchmark Descriptions
 
-**Benchmarks in Papers**
-
-| Name | Description | Type of Design | Language    | Trojan Versions Exist | Papers Which Reference Design | Source |
-| ---- | ----------- | -------------- | --------    | --------------------- | ----------------------------- | ------ |
-| open8 | CPU        | Behavioral     | VHDL        | No  | 1, 6 | https://opencores.org/projects/open8_urisc |
-| 8080 CPU | CPU     | Low-level      | VHDL        | No  | 1, 6 | https://opencores.org/projects/cpu8080 |
+| Name | Description | Type of Design | Language | Trojan Versions Exist | Papers Which Reference Design | Source |
+| ---- | ----------- | -------------- | -------- | --------------------- | ----------------------------- | ------ |
+| AES | AES Cryptography | Behavioral | Verilog     | Yes | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
+| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | Yes | 6 | https://opencores.org/projects/ae18 |
+| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| b15 |              | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| b19     | Unknown | Low-level       | Verilog | Yes                    | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c2670 | 12-bit ALU and controller |  Low-level | Verilog | Yes         | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c3540 | 8-bit ALU  | Low-level      | Verilog | Yes                    | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c5315 | 9-bit ALU  | Low-level      | Verilog | Yes                    | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| c6288 | 16-bit multiplier | Low-level | Verilog | Yes                  | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| DES | DES Cryptography | Behavioral  | Verilog    | No  | 8 | https://iwls.org/iwls2005/benchmarks.html |
+| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | No | 8 | https://opencores.org/projects/ethmac |
+| eVoter | vot. mac. controller |     |          | | 6 | |
+| FPU | Floating Point Unit | Behavioral | Verilog  | No  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
+| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | MIPS 16 | 16-bit MIPS Processor | Behavioral | Verilog | No | 1, 6 | https://opencores.org/projects/mips_16 and https://github.com/emsec/hal-benchmarks/tree/master/cpu/mips_16 |
 | oc8051 | 8051 core | Behavioral     | Verilog     | No  | 1, 6 | https://opencores.org/projects/8051 |
-| AES | AES Cryptography | Behavioral | Verilog     | Yes | 2, 3, 4, 7, 8, 10 | https://trust-hub.org/#/benchmarks/chip-level-trojan and https://iwls.org/iwls2005/benchmarks.html |
-| b15 |              | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s38584_scan |      | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| MC8051 | 8051 microcontroller | Behavioral | Verilog and VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| rs232  | transeiver | Behavioral    | Verilog     | Yes | 2, 4 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 | openMSP430 | microcontroller | Behavioral | Verilog | No  | 3 | https://opencores.org/projects/openmsp430 |
-| basicRSA | RSA Public Key Cypher | Behavioral | VHDL | Yes | 2, 3, 4, 8 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| ae18 | Microchip PIC18 series CPU core | Behavioral | Verilog | Yes | 6 | https://opencores.org/projects/ae18 |
-| Ethernet MAC | Ethernet Media Access Control | Behavioral | Verilog | No | 8 | https://opencores.org/projects/ethmac |
-| DES | DES Cryptography | Behavioral  | Verilog    | No  | 8 | https://iwls.org/iwls2005/benchmarks.html |
-| FPU | Floating Point Unit | Behavioral | Verilog  | No  | 1, 6 | https://iwls.org/iwls2005/benchmarks.html |
+| open8 | CPU        | Behavioral     | VHDL     | No  | 1, 6 | https://opencores.org/projects/open8_urisc |
+| Router |           |                |          | | 1, 6 | |
+| rs232  | transeiver | Behavioral    | Verilog     | Yes | 2, 4 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| SPARC  |           |                |          | | 2 | |
+| s1196   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1238   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s13207  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s13207scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1423 | Unknown    | Low-level      | Verilog  | No                    | | https://iwls.org/iwls2005/benchmarks.html |
+| s1423scan | Unknown, contains scan chain | Low-level | Verilog | Yes   | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1488   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s1494   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s15850 | Unknown   | Low-level      | Verilog  | No                    | | https://iwls.org/iwls2005/benchmarks.html |
+| s15850scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s208_1  | fractional multiplier | Low-level    | Verilog | No          | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s27     | Unknown | Low-level       | Verilog  | No                    | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s298    | traffic light controller | Low-level | Verilog | No          | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s344    | 4x4 add-shift multiplier | Low-level | Verilog | No          | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s349    | 4x4 add-shift multiplier | Low-level | Verilog | No          | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s35932  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s35932scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s382    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s38417  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s38584  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s38584_scan |      | Low-level      | Verilog     | Yes | 2 | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s386    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s400    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s420_1  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s444    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s510    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s526    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s526n   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s5378   | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s641    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s713    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s820    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s832    | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s838_1  | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| s9234_1 | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
+| UART   | UART transmitter |         |          | | 8 | |
+| 8080 CPU | CPU     | Low-level      | VHDL     | No  | 1, 6 | https://opencores.org/projects/cpu8080 |
+| 953     | Unknown | Low-level       | Verilog | No                     | | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 
-**Unlocated Benchmarks**
-
-| Name | Description | Type of Design | Language    | Papers Which Reference Design | Source |
-| ---- | ----------- | -------------- | --------    |  ---------------------------- | ------ |
-| Router |           |                |             | 1, 6 | |
-| SPARC  |           |                |             | 2 | |
-| eVoter | vot. mac. controller |     |             | 6 | |
-| UART   | UART transmitter |         |             | 8 | |
-
-**Other Benchmarks**
-
-| Name | Description | Type of Design | Language | Trojan Versions Exist | Source |
-| ---- | ----------- | -------------- | -------- | --------------------- | ------ |
-| s1423 | Unknown    | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
-| s15850 | Unknown   | Low-level      | Verilog  | No                    | https://iwls.org/iwls2005/benchmarks.html |
-| c2670 | 12-bit ALU and controller |  Low-level | Verilog | Yes         | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c3540 | 8-bit ALU  | Low-level      | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c5315 | 9-bit ALU  | Low-level      | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| c6288 | 16-bit multiplier | Low-level | Verilog | Yes                  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1423scan | Unknown, contains scan chain | Low-level | Verilog | Yes   | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s13207scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s15850scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s35932scan | Unknown, contains scan chain | Low-level | Verilog | Yes  | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s27     | Unknown | Low-level       | Verilog  | No                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s208_1  | fractional multiplier | Low-level    | Verilog | No          | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s298    | traffic light controller | Low-level | Verilog | No          | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s344    | 4x4 add-shift multiplier | Low-level | Verilog | No          | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s349    | 4x4 add-shift multiplier | Low-level | Verilog | No          | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s382    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s386    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s400    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s420_1  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s444    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s510    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s526    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s526n   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s641    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s713    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s820    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s832    | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s838_1  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| 953     | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1196   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1238   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1488   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s1494   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s5378   | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s9234_1 | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s13207  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s35932  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s38417  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| s38584  | Unknown | Low-level       | Verilog | No                     | https://trust-hub.org/#/benchmarks/chip-level-trojan |
-| b19     | Unknown | Low-level       | Verilog | Yes                    | https://trust-hub.org/#/benchmarks/chip-level-trojan |
 
 [1] [WordRev Finding Word Level Structures in a Sea of Bit Level Gates](../wiki/WordRev-Finding-Word-Level-Structures-in-a-Sea-of-Bit-Level-Gates.md)
 
